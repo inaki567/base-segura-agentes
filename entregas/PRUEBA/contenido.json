@@ -1,0 +1,24 @@
+{
+ "carpeta": "PRUEBA",
+ "post": {
+  "imagenes": [
+   "post/01.png"
+  ],
+  "vista_previa": "post/vista-previa.jpg",
+  "caption": "(prueba) Texto del post."
+ },
+ "reel": {
+  "video": "reel/reel.mp4",
+  "caption": "(prueba) Texto del reel."
+ },
+ "linkedin": {
+  "texto": "(prueba) Texto de LinkedIn.",
+  "imagen": ""
+ },
+ "revision": "OK",
+ "temas": {
+  "post": "prueba",
+  "reel": "prueba",
+  "linkedin": "prueba"
+ }
+}
