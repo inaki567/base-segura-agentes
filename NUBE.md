@@ -10,6 +10,9 @@ Las tareas en la nube clonan el repo en `/tmp/bs` (las plantillas cargan las fue
    - Cualquier otro texto → correo `[CONTENIDO] Cambio <carpeta>` con el pedido.
 3. **Cambios** (tarea en la nube a los :05 y :35, de 8 a 21): aplica el pedido y sube una versión nueva (`<carpeta>-v2`, `-v3`…).
 
+## Reels con voz y efectos
+`python3 herramientas/armar-reel.py reel/guion.json reel/` hace todo. La primera vez instala `piper-tts` con pip y baja la voz desde GitHub (releases de k2-fsa/sherpa-onnx) a /tmp/voces; no necesita otra conexión. Tarda 2 a 3 minutos.
+
 ## Preparación (siempre al empezar)
 ```bash
 rm -rf /tmp/bs && git clone --depth 1 https://github.com/inaki567/base-segura-agentes /tmp/bs
@@ -20,7 +23,7 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
 ## Estructura de una entrega
 `entregas/<carpeta>/` (carpeta = `AAAA-MM-DD` o `AAAA-MM-DD-v2`…):
 - `post/brief.md`, `post/textos.md`, `post/html/*.html`, `post/01.png`…, `post/vista-previa.jpg`, `post/caption.txt`
-- `reel/brief.md`, `reel/guion.md`, `reel/reel.html`, `reel/reel.mp4`, `reel/caption.txt`
+- `reel/brief.md`, `reel/guion.json`, `reel/reel.html`, `reel/tiempos.json`, `reel/reel.mp4`, `reel/caption.txt`
 - `linkedin/brief.md`, `linkedin/linkedin.md`, opcional `linkedin/imagen.png`
 - `revision.md`
 - `contenido.json` (lo lee el script de Google; rutas relativas a la carpeta):

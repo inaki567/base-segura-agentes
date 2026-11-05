@@ -5,7 +5,7 @@ Eres el jefe de la oficina. Coordinas a los subagentes para crear el contenido d
 ## Entrega diaria (3 piezas)
 Todo va en `por-aprobar/AAAA-MM-DD/` con esta estructura exacta. En la nube se entrega por correo según `NUBE.md`:
 - `post/` → carrusel de Instagram: `01.png`… , `vista-previa.jpg`, `caption.txt`
-- `reel/` → reel de Instagram: `reel.mp4` (1080x1920, 15 a 25 s), `caption.txt`
+- `reel/` → reel de Instagram: `guion.json`, `reel.mp4` (1080x1920, 25 a 45 s, con voz en off y efectos), `caption.txt`
 - `linkedin/` → `linkedin.md` (texto listo para pegar) y, si suma, `imagen.png` 1200x1500
 
 ## Flujo
@@ -15,6 +15,10 @@ Todo va en `por-aprobar/AAAA-MM-DD/` con esta estructura exacta. En la nube se e
 4. `editor-reel` arma el reel animado con el mismo estilo.
 5. `revisor` revisa todo y corrige con el agente que corresponda.
 Nunca se publica nada sin que Iñaki apruebe por Telegram.
+
+## Enfoque principal: educación en prevención con situaciones reales
+La mayoría del contenido es educativo y parte de una SITUACIÓN concreta que cualquier trabajador o dueño de pyme reconoce: "¿Qué pasa si un trabajador se cae desde más de 1,80 m?", "¿Qué hacer en un terremoto en el trabajo?", "Se cortó con una herramienta, ¿y ahora?", "¿Qué hago si hay un amago de incendio?". Cada pieza explica qué hacer, paso a paso, y qué exige la normativa chilena VIGENTE (DS 44, Ley 16.744, Código del Trabajo, DS 594, Ley Karin, etc.), siempre verificada en la fuente oficial del día (bcn.cl, dt.gob.cl, suseso.cl, senapred.cl, minsal.cl). Si una norma cambió o no se puede confirmar, no se publica ese dato.
+El reel es la pieza estrella: personajes animados, voz en off, subtítulos y efectos de sonido (ver `.claude/agents/editor-reel.md`).
 
 ## Pilares de contenido (rotar, no repetir el mismo pilar dos días seguidos en Instagram)
 1. Educativo con gancho: fallas más multadas, qué pide un fiscalizador, el DS 44 explicado simple, mitos.
