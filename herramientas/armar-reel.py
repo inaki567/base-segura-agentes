@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """Arma un reel completo de Base Segura a partir de reel/guion.json.
 
-Uso:  python3 herramientas/armar-reel.py reel/guion.json reel/
+Uso:  python3 herramientas/armar-reel.py reel/guion.json reel/            (todo automático, plantilla simple)
+      python3 herramientas/armar-reel.py reel/guion.json reel/ --voz      (solo voz + reel/tiempos.json)
+      python3 herramientas/armar-reel.py reel/guion.json reel/ --grabar   (graba TU reel/reel.html y mezcla voz + efectos)
+
+Flujo recomendado (estilo de marca/ESTILO-REELS.md): --voz, luego escribir reel/reel.html a mano usando
+reel/tiempos.json (inicio, duración y tiempo de cada palabra por escena) y al final --grabar.
 
 Hace todo: voz en off (Piper, sin internet), reel.html con personajes y
 animaciones sincronizadas con la voz, grabación del video y mezcla con voz
@@ -72,18 +77,30 @@ def duracion(wav):
         return w.getnframes() / w.getframerate()
 
 
+def palabras(texto, inicio, dur_voz):
+    ps = texto.split()
+    pesos = [len(p) + 2 for p in ps]
+    tot, t, out = sum(pesos) or 1, inicio, []
+    for p, w in zip(ps, pesos):
+        out.append({"p": p, "t": round(t, 2)})
+        t += dur_voz * w / tot
+    return out
+
+
 def locutar(escenas, modelo, carpeta):
     tiempos, t = [], 0.6
     partes = []
+    os.makedirs(os.path.join(carpeta, "voz"), exist_ok=True)
     for i, e in enumerate(escenas):
-        wav = os.path.join(carpeta, f".voz-{i:02d}.wav")
+        wav = os.path.join(carpeta, "voz", f"{i:02d}.wav")
         p = subprocess.run([sys.executable, "-m", "piper", "-m", modelo, "-f", wav, "--length-scale", "0.92",
                             "--sentence-silence", "0.15"], input=e["voz"].encode(), capture_output=True)
         if p.returncode:
             sys.exit(p.stderr.decode())
         d = duracion(wav)
         dur_escena = max(d + PAUSA, 1.6)
-        tiempos.append({"inicio": round(t, 3), "dur": round(dur_escena, 3), "voz": d})
+        tiempos.append({"inicio": round(t, 3), "dur": round(dur_escena, 3), "voz": round(d, 3),
+                        "sfx": e.get("sfx", ""), "palabras": palabras(e["voz"], t, d)})
         partes.append((wav, t))
         t += dur_escena
     total = round(t + 1.2, 2)
@@ -234,22 +251,29 @@ def mezclar(video_mudo, partes, escenas, tiempos, total, salida):
 
 
 def main():
-    if len(sys.argv) < 3:
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    modo = "--voz" if "--voz" in sys.argv else "--grabar" if "--grabar" in sys.argv else "todo"
+    if len(args) < 2:
         sys.exit(__doc__)
-    guion = json.load(open(sys.argv[1], encoding="utf-8"))
-    carpeta = sys.argv[2]
+    guion = json.load(open(args[0], encoding="utf-8"))
+    carpeta = args[1]
     os.makedirs(carpeta, exist_ok=True)
     escenas = guion["escenas"]
-    modelo = asegurar_voz(guion.get("voz", "es_MX-claude-high"))
-    tiempos, partes, total = locutar(escenas, modelo, carpeta)
     html_path = os.path.join(carpeta, "reel.html")
-    open(html_path, "w", encoding="utf-8").write(armar_html(escenas, tiempos, total))
-    json.dump({"total": total, "escenas": tiempos}, open(os.path.join(carpeta, "tiempos.json"), "w"), indent=1)
+    tj = os.path.join(carpeta, "tiempos.json")
+    if modo in ("todo", "--voz"):
+        modelo = asegurar_voz(guion.get("voz", "es_MX-claude-high"))
+        tiempos, partes, total = locutar(escenas, modelo, carpeta)
+        json.dump({"total": total, "escenas": tiempos, "partes": partes}, open(tj, "w"), indent=1, ensure_ascii=False)
+        if modo == "--voz":
+            print(f"Voz lista: {tj} ({total} s). Ahora escribe {html_path} y corre --grabar.")
+            return
+        open(html_path, "w", encoding="utf-8").write(armar_html(escenas, tiempos, total))
+    d = json.load(open(tj, encoding="utf-8"))
+    tiempos, partes, total = d["escenas"], [tuple(p) for p in d["partes"]], d["total"]
     mudo = os.path.join(carpeta, ".mudo.mp4")
     sh("node", os.path.join(AQUI, "grabar-reel.mjs"), html_path, mudo, str(total))
     mezclar(mudo, partes, escenas, tiempos, total, os.path.join(carpeta, "reel.mp4"))
-    for wav, _ in partes:
-        os.remove(wav)
     os.remove(mudo)
     print(f"Reel listo: {os.path.join(carpeta, 'reel.mp4')} ({total} s)")
 
