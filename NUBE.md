@@ -24,7 +24,7 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
 `entregas/<carpeta>/` (carpeta = `AAAA-MM-DD` o `AAAA-MM-DD-v2`…):
 - `post/brief.md`, `post/textos.md`, `post/html/*.html`, `post/01.png`…, `post/vista-previa.jpg`, `post/caption.txt`
 - `reel/brief.md`, `reel/guion.json`, `reel/reel.html`, `reel/tiempos.json`, `reel/reel.mp4`, `reel/caption.txt`
-- `linkedin/brief.md`, `linkedin/linkedin.md`, opcional `linkedin/imagen.png`
+- `linkedin/brief.md`, `linkedin/linkedin.md`, `linkedin/imagen.png` (obligatoria)
 - `revision.md`
 - `contenido.json` (lo lee el script de Google; rutas relativas a la carpeta):
 ```json
@@ -32,7 +32,7 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
   "carpeta": "2026-11-06",
   "post": { "imagenes": ["post/01.png", "post/02.png"], "vista_previa": "post/vista-previa.jpg", "caption": "..." },
   "reel": { "video": "reel/reel.mp4", "caption": "..." },
-  "linkedin": { "texto": "...", "imagen": "" },
+  "linkedin": { "texto": "...", "imagen": "linkedin/imagen.png" },
   "revision": "OK o la lista de notas",
   "temas": { "post": "...", "reel": "...", "linkedin": "..." }
 }

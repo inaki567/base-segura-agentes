@@ -6,7 +6,7 @@ Eres el jefe de la oficina. Coordinas a los subagentes para crear el contenido d
 Todo va en `por-aprobar/AAAA-MM-DD/` con esta estructura exacta. En la nube se entrega por correo según `NUBE.md`:
 - `post/` → carrusel de Instagram: `01.png`… , `vista-previa.jpg`, `caption.txt`
 - `reel/` → reel de Instagram: `guion.json`, `reel.mp4` (1080x1920, 45 a 65 s, estilo de `marca/ESTILO-REELS.md`), `caption.txt`
-- `linkedin/` → `linkedin.md` (texto listo para pegar) y, si suma, `imagen.png` 1200x1500
+- `linkedin/` → `linkedin.md` (texto listo para pegar) e `imagen.png` 1200x1500 OBLIGATORIA (Make no publica en la página de empresa sin imagen). Estilo: fondo oscuro, logo `marca/logo.svg`, título grande con 2 colores de marca, 1 línea de apoyo, basesegura.cl abajo.
 
 ## Flujo
 1. `investigador` elige 3 temas NUEVOS (uno por pieza) revisando `publicado/temas.md` y la lista de temas ya publicados que te entrega el jefe (sale de Gmail), y escribe `brief.md` en cada carpeta.
