@@ -1,5 +1,5 @@
 // Uso: node herramientas/grabar-reel.mjs reel/reel.html reel/reel.mp4 20
-import { chromium } from 'playwright';
+import { abrir } from './navegador.mjs';
 import ffmpeg from 'ffmpeg-static';
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs'; import os from 'node:os'; import path from 'node:path';
@@ -8,7 +8,7 @@ const [html, out, secs = '20'] = process.argv.slice(2);
 if (!html || !out) { console.error('Uso: node grabar-reel.mjs entrada.html salida.mp4 segundos'); process.exit(1); }
 const fps = 30, total = Math.round(Number(secs) * fps);
 const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'reel-'));
-const browser = await chromium.launch();
+const browser = await abrir();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 await page.goto('file://' + path.resolve(html));
 await page.evaluate(() => document.fonts.ready);
