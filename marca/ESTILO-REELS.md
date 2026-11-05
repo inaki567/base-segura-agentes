@@ -13,7 +13,7 @@ Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = a
 3. **Qué hacer, numerado:** "3 COSAS · ⏱ DE INMEDIATO" y luego una pastilla por paso: "1 · SUSPENDER LA FAENA", "2 · AVISAR DE INMEDIATO", "3 · DENUNCIAR A LA MUTUAL O ISL".
 4. **La ley:** tarjeta blanca que aparece desde abajo con encabezado "LEY 16.744 · CHILE", "Art. 76", un extracto corto del artículo con la parte clave resaltada en amarillo y debajo una pastilla chica "🇨🇱 Ley 16.744 · Chile · art. 76". Solo texto verificado en bcn.cl el mismo día.
 5. **Elementos de interfaz que ayudan a contar:** pantalla de teléfono llamando ("Llamando… Inspección del Trabajo y Seremi de Salud" con el número real), formulario "DENUNCIA DE ACCIDENTE", candado cuando la faena queda bloqueada, cinta de peligro rojo y blanco, reloj/temporizador.
-6. **Cierre:** fondo oscuro, logo de Base Segura al centro y una franja: "Comenta **"DIAGNÓSTICO"** para recibir más información sobre nuestro diagnóstico gratis" + WhatsApp +56 9 6863 3349. Abajo, en letra chica, la fuente: "Fuente: Ley 16.744 (Chile), art. 76 · …".
+6. **Cierre:** fondo oscuro, logo de Base Segura al centro y una franja con el llamado a la página: "Cotiza tu diagnóstico gratis en **basesegura.cl**" y debajo "contacto@basesegura.cl". La voz lo dice: "Entra a basesegura.cl y cotiza en un minuto". Abajo, en letra chica, la fuente: "Fuente: Ley 16.744 (Chile), art. 76 · …". (No usar "Comenta DIAGNÓSTICO".)
 
 ## Look
 - **Escenario oscuro y nocturno** (azul-negro #0D1117 a #1a2233), suelo con grilla tenue, luz suave, sensación de maqueta 3D vista en isométrico. Lluvia o partículas sutiles opcionales.
