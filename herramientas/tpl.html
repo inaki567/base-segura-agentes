@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>pending</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1350px; overflow:hidden; }
+  body { background:#F6F5F1; color:#111418;
+         font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .slide { position:relative; width:1080px; height:1350px; padding:90px 90px 80px; display:flex; flex-direction:column; }
+  .top { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-size:38px; font-weight:800; letter-spacing:0.5px; color:#111418; display:flex; align-items:center; gap:16px; }
+  .mark { width:22px; height:44px; background:#0B5E7E; border-radius:4px; }
+  .num { font-size:36px; font-weight:700; color:#0B5E7E; }
+  .rule { height:4px; background:#111418; margin-top:30px; opacity:0.12; }
+  .body { flex:1; display:flex; align-items:center; overflow:hidden; padding:40px 0; }
+  .text { font-weight:__WEIGHT__; line-height:1.22; letter-spacing:-0.5px; overflow-wrap:break-word; hyphens:none; width:100%; }
+  .text.cta { line-height:1.3; }
+  .nw { white-space:nowrap; }
+  .bottom { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .bar { width:160px; height:12px; background:#0B5E7E; border-radius:6px; }
+  .hint { font-size:30px; font-weight:600; color:#4A5058; }
+</style></head>
+<body><div class="slide">
+  <div class="top"><div class="brand"><span class="mark"></span>Base Segura</div><div class="num">__N__/__T__</div></div>
+  <div class="rule"></div>
+  <div class="body" id="box"><div class="text __CLS__" id="txt">__TEXT__</div></div>
+  <div class="bottom"><div class="bar"></div></div>
+</div>
+<script>
+  var box = document.getElementById('box'), t = document.getElementById('txt');
+  var size = __MAX__;
+  t.style.fontSize = size + 'px';
+  function overflows(){ return t.scrollHeight > box.clientHeight - 80 || t.scrollWidth > t.clientWidth; }
+  while (overflows() && size > 30) { size -= 2; t.style.fontSize = size + 'px'; }
+  document.title = (overflows() ? 'OVERFLOW' : 'OK') + ' ' + size + 'px';
+</script>
+</body></html>
