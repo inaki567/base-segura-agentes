@@ -1,0 +1,4 @@
+<!-- Uso: copia este archivo a la carpeta carrusel/ y abre con Playwright. Muestra 01.png..08.png en una grilla. -->
+<html><body style="margin:0;background:#ebebeb;display:grid;grid-template-columns:repeat(4,360px);gap:20px;padding:20px;width:1540px">
+<script>for(let i=1;i<=10;i++){const im=new Image();im.src=String(i).padStart(2,'0')+'.png';im.width=360;im.height=450;im.onerror=()=>im.remove();document.body.appendChild(im)}</script>
+</body></html>
