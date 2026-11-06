@@ -1,0 +1,142 @@
+{
+ "voz": "es_ES-davefx-medium",
+ "tema": "Accidente de trayecto: ¿caída bajando de la micro = accidente del trabajo?",
+ "escenas": [
+  {
+   "voz": "Se cayó bajando de la micro, camino a la pega. ¿Es accidente del trabajo?",
+   "texto": "¿CAÍDA EN LA MICRO = ACCIDENTE DEL TRABAJO?",
+   "resalta": [
+    "="
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "whoosh"
+  },
+  {
+   "voz": "Imagina esto: Camila va a la pega, llueve, baja de la micro y se tuerce el tobillo. ¿Quién la cubre?",
+   "texto": "CAMINO A LA PEGA",
+   "resalta": [
+    "PEGA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "CAÍDA EN EL TRAYECTO",
+    "color": "rojo",
+    "icono": "advertencia"
+   },
+   "escenario": "calle de noche con lluvia, paradero y micro, reloj 7:40"
+  },
+  {
+   "voz": "Sí: es accidente de trayecto, y lo cubre la ley. Pero hay que acreditarlo. Son tres cosas.",
+   "texto": "SÍ: ES ACCIDENTE DE TRAYECTO",
+   "resalta": [
+    "TRAYECTO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 COSAS · DE INMEDIATO",
+    "color": "verde",
+    "icono": "reloj"
+   }
+  },
+  {
+   "voz": "Uno: atiéndete en la mutual de tu empresa, o en el Instituto de Seguridad Laboral. Cuenta qué pasó, a qué hora y por dónde ibas.",
+   "texto": "1 · ATIÉNDETE EN TU MUTUAL O ISL",
+   "resalta": [
+    "MUTUAL"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "1 · MUTUAL O ISL DE TU EMPRESA",
+    "color": "amarillo",
+    "icono": "cruz"
+   }
+  },
+  {
+   "voz": "Dos: pide la constancia de Carabineros, o los datos de testigos.",
+   "texto": "2 · CARABINEROS O TESTIGOS",
+   "resalta": [
+    "TESTIGOS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · PARTE O TESTIGOS",
+    "color": "amarillo",
+    "icono": "documento"
+   }
+  },
+  {
+   "voz": "Tres: el trayecto tiene que ser directo. Si te desviaste por algo personal, lo pueden calificar como accidente común.",
+   "texto": "3 · TRAYECTO DIRECTO, SIN DESVÍOS",
+   "resalta": [
+    "DIRECTO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "piensa",
+   "efecto": "ninguno",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · SIN DESVÍOS PERSONALES",
+    "color": "amarillo",
+    "icono": "ruta"
+   }
+  },
+  {
+   "voz": "Lo dice la Ley dieciséis mil setecientos cuarenta y cuatro, artículo cinco: son también accidentes del trabajo los ocurridos en el trayecto directo, de ida o regreso.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Ley 16.744, art. 5°, inc. 2°",
+   "tarjeta": {
+    "encabezado": "LEY 16.744 · CHILE",
+    "articulo": "Art. 5°, inciso 2°",
+    "extracto": "\"Son también accidentes del trabajo los ocurridos en el trayecto directo, de ida o regreso, entre la habitación y el lugar del trabajo\"",
+    "resaltado_amarillo": "trayecto directo, de ida o regreso",
+    "pastilla_chica": "Ley 16.744 · Chile · art. 5° inc. 2°"
+   }
+  },
+  {
+   "voz": "Y si tienes una pyme: ¿tu equipo sabe a qué mutual ir? Eso se enseña en la capacitación del decreto cuarenta y cuatro. Entra a base segura punto cl y cotiza en un minuto.",
+   "texto": "¿TU EQUIPO SABE A QUÉ MUTUAL IR?",
+   "resalta": [
+    "MUTUAL"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu capacitación en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Ley 16.744 (Chile), art. 5° inc. 2° · DS 44, art. 16 n.° 4 · SUSESO, Compendio Ley 16.744"
+   }
+  }
+ ]
+}
