@@ -14,7 +14,7 @@ y efectos de sonido. Deja reel/reel.html, reel/voz.wav y reel/reel.mp4.
 
 guion.json:
 {
-  "voz": "es_MX-claude-high",          (opcional; ver VOCES)
+  "voz": "kokoro:em_alex",             (opcional; ver VOCES)
   "escenas": [
     {
       "voz": "Texto que dice el narrador (frases cortas).",
@@ -36,11 +36,15 @@ import html, json, os, subprocess, sys, tarfile, urllib.request, wave
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 VOCES = {
-    "es_MX-claude-high": "Masculina, joven, latina (por defecto)",
+    "kokoro:em_alex": "Masculina, latina (seseo), la más natural (por defecto; Kokoro)",
+    "es_MX-claude-high": "Masculina, joven, latina (Piper, más robótica)",
     "es_ES-davefx-medium": "Masculina, acento de España",
 }
 URL_VOZ = "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-{v}.tar.bz2"
 DIR_VOCES = "/tmp/voces"
+VOZ_DEFECTO = "kokoro:em_alex"
+URL_KOKORO = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+VEL_KOKORO = 1.0  # ritmo natural; Kokoro ya habla ágil
 FPS = 30
 PAUSA = 0.35  # segundos de aire entre escenas
 
@@ -57,7 +61,23 @@ def sh(*cmd):
     subprocess.run(cmd, check=True)
 
 
+def asegurar_kokoro():
+    os.makedirs(DIR_VOCES, exist_ok=True)
+    for remoto, local in (("kokoro-v1.0.int8.onnx", "kokoro.onnx"), ("voices-v1.0.bin", "voices.bin")):
+        f = f"{DIR_VOCES}/{local}"
+        if not os.path.exists(f):
+            urllib.request.urlretrieve(URL_KOKORO + remoto, f)
+    try:
+        import kokoro_onnx, soundfile  # noqa: F401
+    except ImportError:
+        sh(sys.executable, "-m", "pip", "install", "-q", "--break-system-packages", "kokoro-onnx", "soundfile")
+    from kokoro_onnx import Kokoro
+    return Kokoro(f"{DIR_VOCES}/kokoro.onnx", f"{DIR_VOCES}/voices.bin")
+
+
 def asegurar_voz(v):
+    if v.startswith("kokoro:"):
+        return (asegurar_kokoro(), v.split(":", 1)[1])
     modelo = f"{DIR_VOCES}/vits-piper-{v}/{v}.onnx"
     if not os.path.exists(modelo):
         os.makedirs(DIR_VOCES, exist_ok=True)
@@ -93,10 +113,17 @@ def locutar(escenas, modelo, carpeta):
     os.makedirs(os.path.join(carpeta, "voz"), exist_ok=True)
     for i, e in enumerate(escenas):
         wav = os.path.join(carpeta, "voz", f"{i:02d}.wav")
-        p = subprocess.run([sys.executable, "-m", "piper", "-m", modelo, "-f", wav, "--length-scale", "0.92",
+        if isinstance(modelo, tuple):  # Kokoro: voz neuronal más natural, español latino (es-419)
+            import numpy as np, soundfile as sf
+            k, voz = modelo
+            audio, sr = k.create(e["voz"], voice=voz, speed=VEL_KOKORO, lang="es-419")
+            audio = np.concatenate([audio, np.zeros(int(sr * 0.12), dtype=audio.dtype)])
+            sf.write(wav, audio, sr, subtype="PCM_16")
+        else:
+          p = subprocess.run([sys.executable, "-m", "piper", "-m", modelo, "-f", wav, "--length-scale", "0.92",
                             "--sentence-silence", "0.15"], input=e["voz"].encode(), capture_output=True)
-        if p.returncode:
-            sys.exit(p.stderr.decode())
+          if p.returncode:
+              sys.exit(p.stderr.decode())
         d = duracion(wav)
         dur_escena = max(d + PAUSA, 1.6)
         tiempos.append({"inicio": round(t, 3), "dur": round(dur_escena, 3), "voz": round(d, 3),
@@ -262,7 +289,7 @@ def main():
     html_path = os.path.join(carpeta, "reel.html")
     tj = os.path.join(carpeta, "tiempos.json")
     if modo in ("todo", "--voz"):
-        modelo = asegurar_voz(guion.get("voz", "es_MX-claude-high"))
+        modelo = asegurar_voz(guion.get("voz", VOZ_DEFECTO))
         tiempos, partes, total = locutar(escenas, modelo, carpeta)
         json.dump({"total": total, "escenas": tiempos, "partes": partes}, open(tj, "w"), indent=1, ensure_ascii=False)
         if modo == "--voz":
