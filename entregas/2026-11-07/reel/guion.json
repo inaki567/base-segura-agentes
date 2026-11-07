@@ -1,0 +1,202 @@
+{
+ "voz": "es_MX-claude-high",
+ "tema": "Golpe de calor en la pega: qué hacer y lo que exige el nuevo art. 98 bis del DS 594 (primer verano vigente)",
+ "escenas": [
+  {
+   "voz": "Dos de la tarde, treinta y tres grados, y tu maestro se marea en el techo. ¿Qué haces?",
+   "texto": "GOLPE DE CALOR: ¿QUÉ HACES PRIMERO?",
+   "resalta": [
+    "CALOR"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "alarma",
+   "escenario": "obra de día con sol fuerte, techo, termómetro marcando 33 °C, reloj 14:00"
+  },
+  {
+   "voz": "Don Luis está rojo y confundido. Vale lo nota: puede ser un golpe de calor. Son tres cosas, ya.",
+   "texto": "PUEDE SER UN GOLPE DE CALOR",
+   "resalta": [
+    "GOLPE DE CALOR"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "POSIBLE GOLPE DE CALOR",
+    "color": "rojo",
+    "icono": "advertencia"
+   },
+   "pastilla_2": {
+    "texto": "3 COSAS · DE INMEDIATO",
+    "color": "amarillo",
+    "icono": "reloj"
+   },
+   "escenario": "don Luis se sienta mareado junto al andamio; Vale, su compañera, corre hacia él"
+  },
+  {
+   "voz": "Uno: llama al SAMU, al ciento treinta y uno.",
+   "texto": "1 · LLAMA AL SAMU 131",
+   "resalta": [
+    "131"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "1 · LLAMA AL SAMU 131",
+    "color": "amarillo",
+    "icono": "telefono"
+   },
+   "interfaz": "pantalla de teléfono: Llamando… SAMU 131"
+  },
+  {
+   "voz": "Dos: llévalo a la sombra, a un lugar fresco.",
+   "texto": "2 · A LA SOMBRA Y AL FRESCO",
+   "resalta": [
+    "SOMBRA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "agachado",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · SOMBRA Y LUGAR FRESCO",
+    "color": "amarillo",
+    "icono": "sombra"
+   }
+  },
+  {
+   "voz": "Tres: enfríalo con paños de agua fría. Y avisa a tu mutual.",
+   "texto": "3 · PAÑOS DE AGUA FRÍA",
+   "resalta": [
+    "AGUA FRÍA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "agachado",
+   "efecto": "ninguno",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · ENFRIAR CON PAÑOS FRÍOS",
+    "color": "amarillo",
+    "icono": "gota"
+   },
+   "pastilla_2": {
+    "texto": "AVISA A TU MUTUAL O ISL",
+    "color": "azul",
+    "icono": "cruz"
+   }
+  },
+  {
+   "voz": "Ojo: es el primer verano con el artículo noventa y ocho bis del decreto quinientos noventa y cuatro.",
+   "texto": "PRIMER VERANO CON EL ART. 98 BIS",
+   "resalta": [
+    "98 BIS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "piensa",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "pastilla": {
+    "texto": "NUEVO · DS 594 · D.O. 16-01-2026",
+    "color": "azul",
+    "icono": "info"
+   },
+   "escenario": "corte a la oficina de la pyme: el dueño frente al escritorio se pregunta qué tenía que hacer antes"
+  },
+  {
+   "voz": "El empleador debe tomar medidas para proteger la salud de su gente ante las altas temperaturas.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "DS 594, art. 98 bis",
+   "tarjeta": {
+    "encabezado": "DS 594 · CHILE",
+    "articulo": "Art. 98 bis",
+    "extracto": "\"Los empleadores y empleadoras deberán tomar las medidas necesarias para proteger la salud de las personas trabajadoras frente a condiciones climáticas que puedan ocasionar las altas temperaturas y altas temperaturas extremas\"",
+    "resaltado_amarillo": "deberán tomar las medidas necesarias para proteger la salud",
+    "pastilla_chica": "DS 594 · Chile · art. 98 bis (Decreto 40/2025 Minsal)"
+   }
+  },
+  {
+   "voz": "En simple: revisa las alertas cada día, evalúa el calor por puesto y arma un plan con tu mutual y tu equipo.",
+   "texto": "LO QUE TE PIDE A TI",
+   "resalta": [
+    "A TI"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastillas": [
+    {
+     "texto": "A · REVISA LAS ALERTAS CADA DÍA",
+     "color": "amarillo",
+     "icono": "sol"
+    },
+    {
+     "texto": "B · EVALÚA EL CALOR POR PUESTO",
+     "color": "amarillo",
+     "icono": "termometro"
+    },
+    {
+     "texto": "C · PLAN CON TU MUTUAL Y TU EQUIPO",
+     "color": "amarillo",
+     "icono": "documento"
+    }
+   ]
+  },
+  {
+   "voz": "Y suma: agua fresca, pausas a la sombra y nadie trabajando solo.",
+   "texto": "AGUA · SOMBRA · NADIE SOLO",
+   "resalta": [
+    "AGUA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "RECOMENDACIÓN DE LA AUTORIDAD",
+    "color": "verde",
+    "icono": "check"
+   },
+   "escenario": "toldo con sombra, bidón de agua, don Luis y Vale descansando juntos"
+  },
+  {
+   "voz": "¿Tu plan de emergencia ya incluye el calor? Te ayudamos a sumarlo. Entra a base segura punto cl y cotiza en un minuto.",
+   "texto": "¿TU PLAN DE EMERGENCIA YA INCLUYE EL CALOR?",
+   "resalta": [
+    "CALOR"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu plan de emergencia en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: DS 594 (Chile), art. 98 bis, agregado por Decreto 40/2025 Minsal (D.O. 16-01-2026) · Minsal, Prevención ante episodios de alta temperatura · SUSESO y DT, medidas preventivas"
+   }
+  }
+ ]
+}
