@@ -1,0 +1,182 @@
+{
+ "voz": "kokoro:em_alex",
+ "tema": "Manejo manual de carga: ¿cuánto peso puede cargar un trabajador? (Código del Trabajo, arts. 211-G a 211-J)",
+ "escenas": [
+  {
+   "voz": "¿Tu trabajador carga sacos de cincuenta kilos al hombro? Eso es el doble de lo que permite la ley.",
+   "texto": "¿SACOS DE 50 KILOS AL HOMBRO?",
+   "resalta": [
+    "50 KILOS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "alarma",
+   "escenario": "Pedro en primer plano con cara de preocupación, saco grande sobre el hombro; detrás, bodega de ferretería de noche"
+  },
+  {
+   "voz": "Imagina esto: llega el camión a una ferretería de Temuco y el jefe le dice a Pedro: bájame esos sacos al hombro.",
+   "texto": "LLEGA EL CAMIÓN…",
+   "resalta": [
+    "CAMIÓN"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "escenario": "maqueta isométrica: camión estacionado frente a la ferretería, pallets con sacos, el jefe señalando y Pedro mirando la carga"
+  },
+  {
+   "voz": "Pedro levanta uno y siente un tirón en la espalda. Si se lesiona, es accidente del trabajo.",
+   "texto": "UN TIRÓN EN LA ESPALDA",
+   "resalta": [
+    "ESPALDA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "SACO DE 50 KG · TIRÓN EN LA ESPALDA",
+    "color": "rojo",
+    "icono": "advertencia"
+   },
+   "escenario": "Pedro queda doblado con el saco en el suelo; el jefe se acerca preocupado"
+  },
+  {
+   "voz": "¿Cómo se evita? Uno: antes de cargar, usa un carro, una transpaleta o una carretilla.",
+   "texto": "1 · PRIMERO, AYUDA MECÁNICA",
+   "resalta": [
+    "AYUDA MECÁNICA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, art. 211-G",
+   "pastilla": {
+    "texto": "4 COSAS · ANTES DE CARGAR",
+    "color": "amarillo",
+    "icono": "reloj"
+   },
+   "pastilla_2": {
+    "texto": "1 · CARRO O TRANSPALETA",
+    "color": "amarillo",
+    "icono": "carro"
+   },
+   "escenario": "Pedro mueve los sacos con una transpaleta, sin esfuerzo"
+  },
+  {
+   "voz": "Dos: si hay que cargar a mano, máximo veinticinco kilos. Veinte para mujeres y menores de dieciocho. Embarazadas, nada.",
+   "texto": "2 · MÁXIMO 25 KILOS",
+   "resalta": [
+    "25 KILOS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastillas": [
+    {
+     "texto": "25 KG · HOMBRES",
+     "color": "amarillo",
+     "icono": "pesa"
+    },
+    {
+     "texto": "20 KG · MUJERES Y MENORES DE 18",
+     "color": "amarillo",
+     "icono": "pesa"
+    },
+    {
+     "texto": "EMBARAZADAS · NADA",
+     "color": "rojo",
+     "icono": "prohibido"
+    }
+   ]
+  },
+  {
+   "voz": "Tres: reparte el peso entre dos, rota los turnos y enseña a levantar: espalda recta y piernas flexionadas.",
+   "texto": "3 · REPARTE, ROTA Y ENSEÑA",
+   "resalta": [
+    "REPARTE"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "agachado",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · ENTRE DOS Y CON TÉCNICA",
+    "color": "amarillo",
+    "icono": "personas"
+   },
+   "pastilla_2": {
+    "texto": "ESPALDA RECTA · PIERNAS FLEXIONADAS",
+    "color": "verde",
+    "icono": "check"
+   },
+   "escenario": "dos trabajadores levantan un saco juntos, espalda recta y rodillas flexionadas, carga pegada al cuerpo"
+  },
+  {
+   "voz": "Cuatro: déjalo escrito en tu matriz de riesgos y capacita a tu equipo.",
+   "texto": "4 · MATRIZ Y CAPACITACIÓN",
+   "resalta": [
+    "MATRIZ"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "DS 63, art. 13",
+   "pastilla": {
+    "texto": "4 · EVALÚA EL RIESGO Y CAPACITA",
+    "color": "amarillo",
+    "icono": "documento"
+   }
+  },
+  {
+   "voz": "Lo dice el Código del Trabajo, artículo doscientos once H: nada de cargas sobre veinticinco kilos.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Código del Trabajo, art. 211-H",
+   "tarjeta": {
+    "encabezado": "CÓDIGO DEL TRABAJO · CHILE",
+    "articulo": "Art. 211-H",
+    "extracto": "\"Si la manipulación manual es inevitable y las ayudas mecánicas no pueden usarse, no se permitirá que se opere con cargas superiores a 25 kilogramos.\"",
+    "resaltado_amarillo": "no se permitirá que se opere con cargas superiores a 25 kilogramos",
+    "pastilla_chica": "Código del Trabajo · Chile · art. 211-H (20 kg mujeres y menores de 18: art. 211-J)"
+   }
+  },
+  {
+   "voz": "¿En tu bodega se carga a mano? Te armamos la matriz de riesgos y la capacitación. Entra a base segura punto cl y cotiza en un minuto.",
+   "texto": "¿EN TU BODEGA SE CARGA A MANO?",
+   "resalta": [
+    "A MANO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu matriz de riesgos en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Código del Trabajo (Chile), arts. 211-G, 211-H, 211-I y 211-J · DS 63, arts. 7 y 13 · DT, Ord. N° 1060 (22-03-2019) y Ord. N° 1300 (13-10-2023)"
+   }
+  }
+ ]
+}
