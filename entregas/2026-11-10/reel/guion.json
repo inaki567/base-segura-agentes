@@ -1,0 +1,181 @@
+{
+ "voz": "kokoro:em_alex",
+ "tema": "Se cayó desde más de 1,80 m: ya es accidente grave (Ley 16.744, art. 76: suspender la faena, avisar a la Inspección del Trabajo y a la Seremi de Salud; multa de 50 a 150 UTM)",
+ "escenas": [
+  {
+   "voz": "¿Tu trabajador se cayó desde más de un metro ochenta? Ojo: eso ya es un accidente grave.",
+   "texto": "¿SE CAYÓ DE MÁS DE 1,80 m?",
+   "resalta": [
+    "1,80 m"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "alarma",
+   "escenario": "maestro en primer plano con cara de preocupación, casco amarillo; detrás, local comercial de noche con una escalera apoyada en la pared"
+  },
+  {
+   "voz": "Imagina esto: el maestro sube a la escalera a cambiar una luminaria. Nadie la sujeta… y se cae.",
+   "texto": "NADIE SUJETA LA ESCALERA…",
+   "resalta": [
+    "ESCALERA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "CAÍDA DE MÁS DE 1,8 m = ACCIDENTE GRAVE",
+    "color": "rojo",
+    "icono": "advertencia"
+   },
+   "escenario": "maqueta isométrica: el maestro arriba de la escalera cambiando una luminaria, la escalera se desliza y él cae al suelo; compañero a lo lejos"
+  },
+  {
+   "voz": "Y pasa harto: en 2025 hubo cuatrocientos noventa y ocho casos así, según la Suseso.",
+   "texto": "498 ACCIDENTES GRAVES EN 2025",
+   "resalta": [
+    "498"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "498 DE 1.770 GRAVES · CAÍDAS DE MÁS DE 1,8 m · SUSESO 2025",
+    "color": "azul",
+    "icono": "grafico"
+   },
+   "escenario": "contador animado que sube hasta 498 sobre la maqueta; pequeña leyenda: Suseso, Estadísticas SST 2025"
+  },
+  {
+   "voz": "¿Qué haces? Uno: no lo muevas y pide ayuda a tu mutual o al ISL.",
+   "texto": "1 · NO LO MUEVAS",
+   "resalta": [
+    "NO LO MUEVAS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "agachado",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 COSAS · DE INMEDIATO",
+    "color": "amarillo",
+    "icono": "reloj"
+   },
+   "pastilla_2": {
+    "texto": "1 · NO MOVERLO Y PEDIR AYUDA",
+    "color": "amarillo",
+    "icono": "ambulancia"
+   },
+   "escenario": "compañero agachado junto al maestro en el suelo, sin moverlo, hablando por teléfono"
+  },
+  {
+   "voz": "Dos: suspende la faena de inmediato. Se retoma solo después de la fiscalización.",
+   "texto": "2 · SUSPENDE LA FAENA",
+   "resalta": [
+    "SUSPENDE"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · SUSPENDER LA FAENA",
+    "color": "amarillo",
+    "icono": "candado"
+   },
+   "escenario": "cinta de peligro roja y blanca rodea la escalera; aparece un candado sobre la zona de trabajo"
+  },
+  {
+   "voz": "Tres: avisa de inmediato a la Inspección del Trabajo y a la Seremi de Salud.",
+   "texto": "3 · AVISA DE INMEDIATO",
+   "resalta": [
+    "AVISA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · INSPECCIÓN DEL TRABAJO Y SEREMI DE SALUD",
+    "color": "amarillo",
+    "icono": "telefono"
+   },
+   "escenario": "pantalla de teléfono: 'Llamando… Inspección del Trabajo y Seremi de Salud' (sin número: no se verificó hoy, no inventarlo)"
+  },
+  {
+   "voz": "Lo dice la Ley dieciséis mil setecientos cuarenta y cuatro, artículo setenta y seis. Y si no cumples, la multa va de cincuenta a ciento cincuenta U T M.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Ley 16.744, art. 76",
+   "tarjeta": {
+    "encabezado": "LEY 16.744 · CHILE",
+    "articulo": "Art. 76",
+    "extracto": "\"…deberá suspender de forma inmediata las faenas afectadas…\" Multa \"de cincuenta a ciento cincuenta unidades tributarias mensuales\".",
+    "resaltado_amarillo": "deberá suspender de forma inmediata las faenas afectadas",
+    "pastilla_chica": "Ley 16.744 · Chile · art. 76"
+   },
+   "pastilla": {
+    "texto": "MULTA: 50 A 150 UTM",
+    "color": "rojo",
+    "icono": "advertencia"
+   }
+  },
+  {
+   "voz": "Mejor que no pase: revisa la escalera y que alguien la sujete. Además, informar el riesgo es obligación: Código del Trabajo, artículo ciento ochenta y cuatro.",
+   "texto": "ANTES DE SUBIR",
+   "resalta": [
+    "ANTES"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "norma": "Código del Trabajo, art. 184",
+   "pastilla": {
+    "texto": "ESCALERA REVISADA · ALGUIEN LA SUJETA",
+    "color": "verde",
+    "icono": "check"
+   },
+   "pastilla_2": {
+    "texto": "RIESGO INFORMADO ANTES DE SUBIR",
+    "color": "verde",
+    "icono": "check"
+   },
+   "escenario": "rebobinar: la escena vuelve atrás; ahora un compañero sujeta la escalera sobre piso firme y el maestro sube tranquilo"
+  },
+  {
+   "voz": "¿En tu pega se trabaja en altura? Te hacemos la matriz de riesgos para que nadie termine en el suelo. Entra a base segura punto cl y cotiza en un minuto.",
+   "texto": "¿EN TU PEGA SE TRABAJA EN ALTURA?",
+   "resalta": [
+    "EN ALTURA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu matriz de riesgos en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Ley 16.744 (Chile), art. 76 · Código del Trabajo, art. 184 (texto DT al 02-11-2026) · Suseso, Compendio Ley 16.744, Libro IV, Tít. I, Letra D · Suseso, Estadísticas SST 2025 (datos al 23-03-2026)"
+   }
+  }
+ ]
+}
