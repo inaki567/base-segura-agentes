@@ -25,6 +25,8 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
 - `post/brief.md`, `post/textos.md`, `post/html/*.html`, `post/01.png`…, `post/vista-previa.jpg`, `post/caption.txt`
 - `reel/brief.md`, `reel/guion.json`, `reel/reel.html`, `reel/tiempos.json`, `reel/reel.mp4`, `reel/caption.txt`
 - `linkedin/brief.md`, `linkedin/linkedin.md`, `linkedin/imagen.png` (obligatoria)
+- Solo los viernes: `linkedin-domingo/` con los mismos archivos que `linkedin/`.
+- Solo existen las carpetas de las piezas que tocan ese día (ver calendario en `CLAUDE.md`).
 - `revision.md`
 - `contenido.json` (lo lee el script de Google; rutas relativas a la carpeta):
 ```json
@@ -32,26 +34,28 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
   "carpeta": "2026-11-06",
   "post": { "imagenes": ["post/01.png", "post/02.png"], "vista_previa": "post/vista-previa.jpg", "caption": "..." },
   "reel": { "video": "reel/reel.mp4", "caption": "..." },
-  "linkedin": { "texto": "...", "imagen": "linkedin/imagen.png" },
+  "linkedin": { "texto": "...", "imagen": "linkedin/imagen.png", "cuenta": "personal | empresa" },
+  "linkedin_domingo": { "texto": "...", "imagen": "linkedin-domingo/imagen.png", "cuenta": "empresa" },
   "revision": "OK o la lista de notas",
   "temas": { "post": "...", "reel": "...", "linkedin": "..." }
 }
 ```
-Genera `contenido.json` con un script (python o node) que lea los archivos, nunca escribiendo los textos a mano en JSON.
+Incluye en `contenido.json` SOLO las claves de las piezas que existen ese día (no pongas claves vacías). Genera `contenido.json` con un script (python o node) que lea los archivos, nunca escribiendo los textos a mano en JSON.
 
 ## Temas ya usados (para no repetir)
 - `publicado/temas.md` del repo.
 - Gmail de basesegura.cl@gmail.com: correos con asunto `[CONTENIDO] Publicado` (aprobados) y `[CONTENIDO] Para aprobar` de los últimos 30 días (propuestos).
 
 ## Generación diaria
-1. Preparación. Carpeta = fecha de hoy en Chile (`TZ=America/Santiago date +%F`). Si `entregas/<fecha>` ya existe, termina sin hacer nada.
+1. Preparación. Carpeta = fecha de hoy en Chile (`TZ=America/Santiago date +%F`). Si `entregas/<fecha>` ya existe, termina sin hacer nada. Si hoy es sábado o domingo, termina sin hacer nada.
+   Mira el día de la semana (`TZ=America/Santiago date +%u`) y crea SOLO las piezas del "Calendario semanal" de `CLAUDE.md`: lunes, miércoles y viernes = reel + LinkedIn (lunes y viernes perfil personal, miércoles página de empresa; el viernes además `linkedin-domingo` para la página de empresa); martes y jueves = carrusel solo.
 2. Arma la lista de temas ya usados y pásasela al investigador.
 3. Sigue `CLAUDE.md` con los cinco roles de `.claude/agents/` (investigador → redactor → disenador → editor-reel → revisor), trabajando dentro de `entregas/<fecha>/` en vez de `por-aprobar/`. Usa los subagentes si están disponibles; si no, cumple tú cada rol leyendo su archivo.
-4. Comprueba que existan los PNG, `vista-previa.jpg` y `reel.mp4` (menos de 20 MB), y mira tú mismo la vista previa con la herramienta Read.
+4. Comprueba que existan los archivos de las piezas del día (PNG y `vista-previa.jpg` si hay carrusel; `reel.mp4` de menos de 20 MB si hay reel; `linkedin.md` e `imagen.png` si hay LinkedIn) y mira tú mismo las imágenes con la herramienta Read.
 5. Genera `contenido.json`.
 6. Limpieza: borra con `git rm -r` las carpetas de `entregas/` de más de 7 días.
 7. `git add -A && git commit -m "feat: contenido <carpeta>" && git push` (si falla por cambios remotos: `git pull --rebase` y push de nuevo).
-8. Envía con Gmail `send_message` a basesegura.cl@gmail.com (única dirección permitida) un correo con asunto `[CONTENIDO] Para aprobar <carpeta>` y cuerpo: la carpeta y los 3 temas, uno por línea. Sin adjuntos.
+8. Envía con Gmail `send_message` a basesegura.cl@gmail.com (única dirección permitida) un correo con asunto `[CONTENIDO] Para aprobar <carpeta>` y cuerpo: la carpeta, las piezas del día y su tema, una por línea (para LinkedIn indica si es perfil personal o página de empresa). Sin adjuntos.
 
 ## Cambios pedidos por Iñaki
 1. Busca en Gmail correos con asunto `[CONTENIDO] Cambio` de los últimos 3 días que NO tengan la etiqueta `Cambio hecho`. Si no hay, termina sin hacer nada (no clones nada).
