@@ -63,6 +63,7 @@ Solo valores referenciales del cotizador del sitio, como "desde $X + IVA", aclar
 - LinkedIn: tono profesional y cercano, de opinión o análisis (un dato oficial + qué significa para una empresa + recomendación práctica), 150 a 250 palabras, máximo 3 hashtags, sin emojis en exceso.
 
 ## Reglas de marca
+- Nada de chilenismos ni palabras muy coloquiales ("pega", "la pega", "harto", "al tiro", "cachai", etc.). Lenguaje cercano pero correcto: "trabajo", "empresa", "mucho".
 - Voz "nosotros", sencilla, amigable, poco técnica. Priorizar a las personas. Redactar como sugerencia y citar el artículo de la norma.
 - Contacto: WhatsApp +56 9 6863 3349 · basesegura.cl (sitio en línea, con cotizador en basesegura.cl/cotizar) · contacto@basesegura.cl · "link en la bio".
 - Cifras: solo con fuente oficial y fecha (dt.gob.cl, suseso.cl, previsionsocial.gob.cl, bcn.cl). Si no hay fuente, no va.
