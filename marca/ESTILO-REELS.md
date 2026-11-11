@@ -27,7 +27,7 @@ Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = a
 
 ## Sonido
 - Voz en off masculina, joven, cercana, ritmo ágil ("Imagina esto…", "Pero ojo con…", "Uno… Dos… Tres…").
-- **Voz elegida por Iñaki (11-11-2026):** Gemini TTS, voz **Finn**, con este estilo exacto: "Acento chileno (español de Chile), narrador viral de reels: más animado y con chispa, sonriendo al hablar, mucho entusiasmo y energía alta pero natural, ritmo ágil, como un creador de contenido chileno joven que cuenta un dato curioso que lo emociona". Se genera desde Apps Script (propiedad `GEMINI_KEY`), porque la nube bloquea la API. Kokoro queda solo de respaldo.
+- **Voz elegida por Iñaki (11-11-2026):** Gemini TTS, voz **Finn**, con este estilo exacto: "Acento chileno (español de Chile), narrador viral de reels: más animado y con chispa, sonriendo al hablar, mucho entusiasmo y energía alta pero natural, ritmo ágil, como un creador de contenido chileno joven que cuenta un dato curioso que lo emociona". Se genera desde Apps Script (propiedad `GEMINI_KEY`), porque la nube bloquea la API. Kokoro queda solo de respaldo. En `guion.json` va `"voz": "gemini:Finn"` (flujo en NUBE.md).
 - Efectos en cada momento clave (`herramientas/sfx/`): whoosh en cambios de cámara, golpe en caídas, temblor en sismos, alarma en emergencias, pop cuando aparece una pastilla, ding cuando aparece la ley, error en lo que NO se debe hacer.
 
 ## Cómo se arma (técnico)
