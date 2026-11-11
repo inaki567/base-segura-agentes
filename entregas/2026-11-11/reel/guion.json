@@ -1,0 +1,158 @@
+{
+ "voz": "kokoro:em_alex",
+ "tema": "Contrataste al trabajador número 10: con 10 a 25 personas en el lugar de trabajo y sin Comité Paritario, los trabajadores eligen un Delegado de Seguridad y Salud en el Trabajo (DS 44, art. 66; Comité Paritario desde más de 25, art. 23)",
+ "escenas": [
+  {
+   "voz": "¿Qué pasa si mañana contratas al trabajador número diez? Ojo, porque algo cambia.",
+   "texto": "¿CONTRATAS AL TRABAJADOR N° 10?",
+   "resalta": [
+    "N° 10"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "alarma",
+   "escenario": "dueño del taller en primer plano con cara de preocupación, casco amarillo; detrás, taller mecánico de noche con un contador grande que pasa de 9 a 10"
+  },
+  {
+   "voz": "Imagina un taller en Temuco. Llega el nuevo, ya son diez, y alguien pregunta: ¿quién es nuestro delegado de seguridad?",
+   "texto": "¿Y QUIÉN ES NUESTRO DELEGADO?",
+   "resalta": [
+    "DELEGADO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "piensa",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "10 PERSONAS EN EL TALLER",
+    "color": "azul",
+    "icono": "personas"
+   },
+   "escenario": "maqueta isométrica del taller: el dueño celebra con el trabajador nuevo, nueve compañeros alrededor; uno levanta la mano con un globo de pregunta; el dueño se rasca la cabeza"
+  },
+  {
+   "voz": "Uno: cuenta a las personas de tu local o faena. Si son entre diez y veinticinco, y no hay Comité Paritario, toca elegir delegado.",
+   "texto": "1 · CUENTA A TU EQUIPO",
+   "resalta": [
+    "CUENTA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 COSAS · PARA HACER YA",
+    "color": "amarillo",
+    "icono": "reloj"
+   },
+   "pastilla_2": {
+    "texto": "1 · DE 10 A 25 Y SIN COMITÉ = DELEGADO",
+    "color": "amarillo",
+    "icono": "personas"
+   },
+   "escenario": "los trabajadores del taller se iluminan uno a uno mientras un contador sube: 1, 2, 3… 10"
+  },
+  {
+   "voz": "Dos: lo eligen los trabajadores, en asamblea, y se levanta un acta. La empresa no lo designa: promueve la elección y da las facilidades.",
+   "texto": "2 · LO ELIGE EL EQUIPO",
+   "resalta": [
+    "EL EQUIPO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · ASAMBLEA Y ACTA",
+    "color": "amarillo",
+    "icono": "documento"
+   },
+   "pastilla_2": {
+    "texto": "EL DUEÑO NO LO DESIGNA",
+    "color": "rojo",
+    "icono": "advertencia"
+   },
+   "escenario": "asamblea en el taller: los trabajadores levantan la mano para votar; aparece un formulario 'ACTA DE ELECCIÓN · DELEGADO DE SST' que se firma; el dueño ofrece la sala y la hora"
+  },
+  {
+   "voz": "Tres: el delegado dura hasta dos años y participa en la gestión preventiva de la empresa. Después, se elige de nuevo.",
+   "texto": "3 · HASTA 2 AÑOS",
+   "resalta": [
+    "2 AÑOS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · HASTA 2 AÑOS · LUEGO SE ELIGE DE NUEVO",
+    "color": "amarillo",
+    "icono": "calendario"
+   },
+   "escenario": "el delegado elegido con brazalete o chaleco distinto revisa una lista de trabajo preventivo junto al dueño; al lado, un calendario que avanza dos años"
+  },
+  {
+   "voz": "Lo dice el Decreto Supremo cuarenta y cuatro, artículo sesenta y seis.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "DS 44, art. 66",
+   "tarjeta": {
+    "encabezado": "DS 44 · CHILE",
+    "articulo": "Art. 66",
+    "extracto": "Donde \"laboren entre 10 y hasta 25 personas trabajadoras\" y \"no funcionare un Comité Paritario\", se elige un Delegado de SST. \"La entidad empleadora deberá promover y otorgar las facilidades necesarias para la realización de esta elección.\"",
+    "resaltado_amarillo": "deberá promover y otorgar las facilidades necesarias",
+    "pastilla_chica": "DS 44 · Chile · art. 66"
+   }
+  },
+  {
+   "voz": "Pero ojo: si en tu local trabajan más de veinticinco personas, ya no es delegado. Ahí corresponde Comité Paritario, artículo veintitrés.",
+   "texto": "¿MÁS DE 25? COMITÉ PARITARIO",
+   "resalta": [
+    "MÁS DE 25"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "norma": "DS 44, art. 23",
+   "pastilla": {
+    "texto": "MÁS DE 25 PERSONAS → COMITÉ PARITARIO",
+    "color": "azul",
+    "icono": "info"
+   },
+   "escenario": "la cámara se aleja y el taller crece: llegan más trabajadores, el contador pasa de 25 a 26 y aparece una mesa con seis sillas rotulada 'COMITÉ PARITARIO'"
+  },
+  {
+   "voz": "¿Tu equipo está creciendo? Te ayudamos a dejar al día todo lo que pide el D S cuarenta y cuatro para tu tamaño. Entra a base segura punto cl y cotiza en un minuto. El diagnóstico es gratis.",
+   "texto": "¿TU EQUIPO ESTÁ CRECIENDO?",
+   "resalta": [
+    "CRECIENDO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu diagnóstico gratis en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: DS 44 de 2023 (Chile), arts. 23, 64 y 66 · texto oficial en previsionsocial.gob.cl (consultado el 11-11-2026)"
+   }
+  }
+ ]
+}
