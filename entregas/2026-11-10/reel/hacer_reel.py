@@ -430,7 +430,7 @@ minis = "".join(f'<div class="mini" style="animation-delay:{e[8]["inicio"]+0.4+k
 cta = f'''<div class="cta win" style="--i:{e[8]['inicio']:.2f}s;--d:{TOT-e[8]['inicio']:.2f}s"><div class="cta-in">
 <div class="logo">{LOGO}</div>
 <div class="fase1 win" style="--i:{e[8]['inicio']:.2f}s;--d:{t_fase2-e[8]['inicio']+0.3:.2f}s">
-<div class="cta-t">¿En tu pega se trabaja<br><span style="color:#F2A33A">en altura</span>?</div>
+<div class="cta-t">¿En tu empresa se trabaja<br><span style="color:#F2A33A">en altura</span>?</div>
 <div class="minis">{minis}</div></div>
 <div class="fase2">
 <div class="cta-t2">Te hacemos la <span style="color:#F2A33A">matriz de riesgos</span></div>

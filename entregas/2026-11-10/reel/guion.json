@@ -1,5 +1,5 @@
 {
- "voz": "kokoro:em_alex",
+ "voz": "gemini:Finn",
  "tema": "Se cayó desde más de 1,80 m: ya es accidente grave (Ley 16.744, art. 76: suspender la faena, avisar a la Inspección del Trabajo y a la Seremi de Salud; multa de 50 a 150 UTM)",
  "escenas": [
   {
@@ -34,7 +34,7 @@
    "escenario": "maqueta isométrica: el maestro arriba de la escalera cambiando una luminaria, la escalera se desliza y él cae al suelo; compañero a lo lejos"
   },
   {
-   "voz": "Y pasa harto: en 2025 hubo cuatrocientos noventa y ocho casos así, según la Suseso.",
+   "voz": "Y es más común de lo que crees: en 2025 hubo cuatrocientos noventa y ocho casos así, según la Suseso.",
    "texto": "498 ACCIDENTES GRAVES EN 2025",
    "resalta": [
     "498"
@@ -160,8 +160,8 @@
    "escenario": "rebobinar: la escena vuelve atrás; ahora un compañero sujeta la escalera sobre piso firme y el maestro sube tranquilo"
   },
   {
-   "voz": "¿En tu pega se trabaja en altura? Te hacemos la matriz de riesgos para que nadie termine en el suelo. Entra a base segura punto cl y cotiza en un minuto.",
-   "texto": "¿EN TU PEGA SE TRABAJA EN ALTURA?",
+   "voz": "¿En tu empresa se trabaja en altura? Te hacemos la matriz de riesgos para que nadie termine en el suelo. Entra a base segura punto cl y cotiza en un minuto.",
+   "texto": "¿EN TU EMPRESA SE TRABAJA EN ALTURA?",
    "resalta": [
     "EN ALTURA"
    ],
