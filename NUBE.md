@@ -11,7 +11,12 @@ Las tareas en la nube clonan el repo en `/tmp/bs` (las plantillas cargan las fue
 3. **Cambios** (tarea en la nube a los :05 y :35, de 8 a 21): aplica el pedido y sube una versión nueva (`<carpeta>-v2`, `-v3`…).
 
 ## Reels con voz y efectos
-`python3 herramientas/armar-reel.py reel/guion.json reel/` hace todo. La primera vez instala `piper-tts` con pip y baja la voz desde GitHub (releases de k2-fsa/sherpa-onnx) a /tmp/voces; no necesita otra conexión. Tarda 2 a 4 minutos. Para el estilo de `marca/ESTILO-REELS.md` se usa en dos pasos: `--voz` y, después de escribir reel.html, `--grabar`.
+La voz de los reels es **Gemini TTS, voz Finn, acento chileno animado** (elegida por Iñaki). La nube no puede llamar a Gemini, así que la genera Apps Script (`herramientas/apps-script/Voz.gs`, proyecto Contenido):
+1. Con `guion.json` listo (con `"voz": "gemini:Finn"`), manda con Gmail un correo a basesegura.cl@gmail.com, asunto `VOZ PEDIDO <carpeta>` y cuerpo SOLO este JSON: `{"fecha":"<carpeta>","escenas":["<voz escena 0>","<voz escena 1>",...]}` (los textos del campo `voz` de cada escena, en orden).
+2. Cada 2 minutos busca en Gmail `subject:"VOZ LISTA <carpeta>"` (máximo 20 minutos). Cuando llegue, descarga el adjunto `voz.zip` y descomprímelo en `reel/voz/` (quedan `00.wav`, `01.wav`…).
+3. `python3 herramientas/armar-reel.py reel/guion.json reel/ --voz` (calcula tiempos con esos wav), escribe `reel.html` y luego `--grabar`.
+4. Si a los 20 minutos no llegó, usa el respaldo: cambia `"voz"` a `"kokoro:em_alex"` en el guion, corre igual y avisa en el correo de entrega que salió con la voz de respaldo.
+Si cambias un texto de voz en un pedido de cambio, pide la voz de nuevo con asunto `VOZ PEDIDO <carpeta nueva>`.
 
 ## Preparación (siempre al empezar)
 ```bash

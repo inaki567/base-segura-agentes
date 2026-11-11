@@ -36,7 +36,8 @@ import html, json, os, subprocess, sys, tarfile, urllib.request, wave
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 VOCES = {
-    "kokoro:em_alex": "Masculina, latina (seseo), la más natural (por defecto; Kokoro)",
+    "gemini:Finn": "Elegida por Iñaki: Gemini TTS Finn, acento chileno animado (la genera Apps Script; ver NUBE.md)",
+    "kokoro:em_alex": "Masculina, latina (seseo), respaldo si Gemini no responde (Kokoro)",
     "es_MX-claude-high": "Masculina, joven, latina (Piper, más robótica)",
     "es_ES-davefx-medium": "Masculina, acento de España",
 }
@@ -76,6 +77,8 @@ def asegurar_kokoro():
 
 
 def asegurar_voz(v):
+    if v.startswith("gemini:"):  # voz hecha por Apps Script (voz.zip descomprimido en reel/voz/NN.wav)
+        return "gemini"
     if v.startswith("kokoro:"):
         return (asegurar_kokoro(), v.split(":", 1)[1])
     modelo = f"{DIR_VOCES}/vits-piper-{v}/{v}.onnx"
@@ -113,7 +116,10 @@ def locutar(escenas, modelo, carpeta):
     os.makedirs(os.path.join(carpeta, "voz"), exist_ok=True)
     for i, e in enumerate(escenas):
         wav = os.path.join(carpeta, "voz", f"{i:02d}.wav")
-        if isinstance(modelo, tuple):  # Kokoro: voz neuronal más natural, español latino (es-419)
+        if modelo == "gemini":
+            if not os.path.exists(wav):
+                sys.exit(f"Falta {wav}: descomprime voz.zip (correo 'VOZ LISTA') en {carpeta}/voz/")
+        elif isinstance(modelo, tuple):  # Kokoro: voz neuronal más natural, español latino (es-419)
             import numpy as np, soundfile as sf
             k, voz = modelo
             audio, sr = k.create(e["voz"], voice=voz, speed=VEL_KOKORO, lang="es-419")
