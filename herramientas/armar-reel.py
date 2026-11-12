@@ -279,7 +279,7 @@ def mezclar(video_mudo, partes, escenas, tiempos, total, salida):
             idx += 1
     filtros.append(f"{''.join(etiquetas)}amix=inputs={len(etiquetas)}:normalize=0,alimiter=limit=0.95[mix]")
     sh("ffmpeg", "-loglevel", "error", "-y", *entradas, "-filter_complex", ";".join(filtros),
-       "-map", "0:v", "-map", "[mix]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-t", str(total),
+       "-map", "0:v", "-map", "[mix]", "-c:v", "copy", "-c:a", "aac", "-ar", "48000", "-ac", "2", "-b:a", "192k", "-t", str(total),
        "-movflags", "+faststart", salida)
 
 
