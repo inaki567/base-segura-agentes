@@ -12,6 +12,7 @@ const browser = await abrir();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 await page.goto('file://' + path.resolve(html));
 await page.evaluate(() => document.fonts.ready);
+await page.waitForFunction(() => !document.getElementById('gl') || window.__listo, null, { timeout: 60000 });
 await page.waitForTimeout(800);
 await page.evaluate(() => document.getAnimations().forEach(a => a.pause()));
 for (let i = 0; i < total; i++) {

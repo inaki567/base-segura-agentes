@@ -19,7 +19,7 @@ LinkedIn: en `linkedin/brief.md` anota para qué cuenta es (personal o empresa) 
 ## Piezas posibles
 Todo va en `por-aprobar/AAAA-MM-DD/` con esta estructura exacta (solo las carpetas de las piezas del día). En la nube se entrega por correo según `NUBE.md`:
 - `post/` → carrusel de Instagram: `01.png`… , `vista-previa.jpg`, `caption.txt`
-- `reel/` → reel de Instagram: `guion.json`, `reel.mp4` (1080x1920, 45 a 65 s, estilo de `marca/ESTILO-REELS.md`), `caption.txt`
+- `reel/` → reel de Instagram: `guion.json`, `reel.mp4` (1080x1920, 45 a 50 s como máximo, en 3D según `marca/ESTILO-REELS.md`), `caption.txt`
 - `linkedin-domingo/` → solo los viernes: igual que `linkedin/`, para la página de empresa.
 - `linkedin/` → `linkedin.md` (texto listo para pegar) e `imagen.png` 1200x1500 OBLIGATORIA (Make no publica en la página de empresa sin imagen). Estilo: fondo oscuro, logo `marca/logo.svg`, título grande con 2 colores de marca, 1 línea de apoyo, basesegura.cl abajo.
 
@@ -63,7 +63,7 @@ Solo valores referenciales del cotizador del sitio, como "desde $X + IVA", aclar
 - LinkedIn: tono profesional y cercano, de opinión o análisis (un dato oficial + qué significa para una empresa + recomendación práctica), 150 a 250 palabras, máximo 3 hashtags, sin emojis en exceso.
 
 ## Reglas de marca
-- Nada de chilenismos ni palabras muy coloquiales ("pega", "la pega", "harto", "al tiro", "cachai", etc.). Lenguaje cercano pero correcto: "trabajo", "empresa", "mucho".
+- Lenguaje formal y cercano. Nada de chilenismos ni palabras muy coloquiales ("pega", "la pega", "harto", "al tiro", "cachai", etc.). Lenguaje cercano pero correcto: "trabajo", "empresa", "mucho".
 - Voz "nosotros", sencilla, amigable, poco técnica. Priorizar a las personas. Redactar como sugerencia y citar el artículo de la norma.
 - Contacto: WhatsApp +56 9 6863 3349 · basesegura.cl (sitio en línea, con cotizador en basesegura.cl/cotizar) · contacto@basesegura.cl · "link en la bio".
 - Cifras: solo con fuente oficial y fecha (dt.gob.cl, suseso.cl, previsionsocial.gob.cl, bcn.cl). Si no hay fuente, no va.

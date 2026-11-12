@@ -4,8 +4,8 @@ Referencias: `marca/referencias-reels/*.jpg` (12 cuadros de cada video de ejempl
 Son de otra marca: copia el ESTILO, nunca su logo, nombre, colores de marca ni textos. Todo lo de marca es de Base Segura.
 
 ## La idea
-Mini historia animada de 45 a 65 segundos sobre una SITUACIÓN real de trabajo, contada por una voz en off cercana, que termina en qué hacer paso a paso y qué dice la ley chilena vigente.
-Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = accidente del trabajo?", "¿Qué hacer en un terremoto en la pega?", "¿Qué pasa si alguien cae de más de 1,8 m?".
+Mini historia animada en 3D de **45 a 50 segundos (nunca más de 50)** sobre una SITUACIÓN real de trabajo, contada por una voz en off cercana, que termina en qué hacer paso a paso y qué dice la ley chilena vigente.
+Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = accidente del trabajo?", "¿Qué hacer en un terremoto en el trabajo?", "¿Qué pasa si alguien cae de más de 1,8 m?".
 
 ## Estructura (en este orden)
 1. **Gancho (0 a 3 s):** pregunta grande en el centro, con una palabra en color ("Accidente **grave**: ¿qué haces primero?", "¿Accidente en la micro **=** accidente del trabajo?"). Personaje en primer plano con cara de preocupación.
@@ -15,11 +15,11 @@ Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = a
 5. **Elementos de interfaz que ayudan a contar:** pantalla de teléfono llamando ("Llamando… Inspección del Trabajo y Seremi de Salud" con el número real), formulario "DENUNCIA DE ACCIDENTE", candado cuando la faena queda bloqueada, cinta de peligro rojo y blanco, reloj/temporizador.
 6. **Cierre:** fondo oscuro, logo de Base Segura al centro y una franja con el llamado a la página: "Cotiza tu diagnóstico gratis en **basesegura.cl**" y debajo "contacto@basesegura.cl". La voz lo dice: "Entra a basesegura.cl y cotiza en un minuto". Abajo, en letra chica, la fuente: "Fuente: Ley 16.744 (Chile), art. 76 · …". (No usar "Comenta DIAGNÓSTICO".)
 
-## Look
-- **Escenario oscuro y nocturno** (azul-negro #0D1117 a #1a2233), suelo con grilla tenue, luz suave, sensación de maqueta 3D vista en isométrico. Lluvia o partículas sutiles opcionales.
-- **Escenarios tipo maqueta:** andamios, casetas de faena con techos de colores, conos naranjos, edificios con ventanas iluminadas, calles con línea amarilla, micro/bus, árboles redondos. Hechos con SVG/CSS en perspectiva isométrica (transform: rotateX/rotateZ) con sombras suaves.
-- **Personajes estilo juguete (tipo Playmobil):** cabeza grande y redonda, casco amarillo/blanco, ojos y cejas expresivos, cuerpo cilíndrico, colores planos (azul, morado, gris), franja reflectante amarilla en el cuerpo. Uno en primer plano para el gancho y varios chicos en la escena.
-- **Cámara:** siempre en movimiento suave: acercamientos, paneos y giros leves entre escenas (animaciones de transform sobre el contenedor de la escena). Nunca una lámina estática más de 2 s.
+## Look (3D, aprobado por Iñaki el 11-11-2026)
+- **Escena 3D real** hecha con el motor `herramientas/3d/` (Three.js): luces, sombras suaves, aspecto de maqueta de juguete, fondo azul-negro. Nada de dibujos planos.
+- **Escenarios** (elige el que calce con la situación): `obra` (terreno, andamios, excavadora, conos, valla), `local` (ferretería o comercio con góndolas, mostrador y escalera), `bodega` (estanterías altas con cajas que se pueden caer) y `transito` (bodega con grúa horquilla y pasillo peatonal).
+- **Personajes tipo juguete:** el trabajador **inseguro** lleva polera roja, pantalón negro y va sin casco ni EPP (hace lo incorrecto); el trabajador **seguro** lleva chaleco reflectante azul y casco blanco, los colores de Base Segura (hace lo correcto). Caminan, cargan, se tambalean, caen, se asustan, celebran; parpadean y cambian la cara según lo que pasa.
+- **Cámara:** siempre en movimiento: acercamiento en el gancho, plano general en la situación, cambio de plano en cada escena, temblor en caídas y golpes, órbita en la ley y el cierre.
 - **Subtítulos karaoke ARRIBA:** 1 o 2 líneas cortas en blanco, letra Outfit 800, la palabra clave en amarillo/naranjo #F2A33A; van apareciendo palabra por palabra sincronizados con la voz (usa `palabras` de `reel/tiempos.json`).
 - **Pastillas/etiquetas:** fondo de color sólido (rojo #E5484D para peligro, amarillo #FFC53D para pasos, azul #1FA9E8 para info, verde #25D366 para lo correcto), texto negro o blanco en MAYÚSCULAS, Outfit 800, con un emoji o ícono al inicio, bordes muy redondeados y sombra. Entran con un pequeño rebote.
 - **Marca:** @basesegura.cl chico, arriba a la derecha con ícono de Instagram, fijo durante todo el video.
@@ -30,9 +30,9 @@ Ejemplos: "Accidente grave: ¿qué haces primero?", "¿Accidente en la micro = a
 - **Voz elegida por Iñaki (11-11-2026):** Gemini TTS, voz **Finn**, con este estilo exacto: "Acento chileno (español de Chile), narrador viral de reels: más animado y con chispa, sonriendo al hablar, mucho entusiasmo y energía alta pero natural, ritmo ágil, como un creador de contenido chileno joven que cuenta un dato curioso que lo emociona". Se genera desde Apps Script (propiedad `GEMINI_KEY`), porque la nube bloquea la API. Kokoro queda solo de respaldo. En `guion.json` va `"voz": "gemini:Finn"` (flujo en NUBE.md).
 - Efectos en cada momento clave (`herramientas/sfx/`): whoosh en cambios de cámara, golpe en caídas, temblor en sismos, alarma en emergencias, pop cuando aparece una pastilla, ding cuando aparece la ley, error en lo que NO se debe hacer.
 
+## Lenguaje
+Formal y cercano, sin chilenismos ni palabras coloquiales ("pega", "harto", "al tiro", "cachai", "po"). Frases cortas y claras.
+
 ## Cómo se arma (técnico)
-1. `python3 herramientas/armar-reel.py reel/guion.json reel/ --voz` → genera la voz por escena y `reel/tiempos.json` (inicio, duración y tiempo de cada palabra).
-2. Escribe `reel/reel.html` a mano con este estilo: una `<section>` por escena con `animation-delay` igual a su `inicio`, todas las animaciones en CSS (@keyframes), fuentes desde `file:///tmp/bs/fonts/fonts.css`.
-3. `python3 herramientas/armar-reel.py reel/guion.json reel/ --grabar` → graba y mezcla voz + efectos (los efectos salen del campo `sfx` de cada escena del guion).
-4. Revisa 5 o 6 cuadros con ffmpeg + Read antes de entregar.
-La plantilla automática (sin `--voz`/`--grabar`) solo sirve de respaldo si se acaba el tiempo.
+Todo el paso a paso está en `herramientas/3d/LEEME.md`: voz Finn → `tiempos.json` (45 a 50 s) → `reel/escena3d.js` → `armar-reel-3d.py reel/ --fotos` (revisar cuadros) → `armar-reel.py ... --grabar`.
+Ejemplo completo: `herramientas/3d/ejemplo-escena3d.js`.
