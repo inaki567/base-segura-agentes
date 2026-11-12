@@ -11,6 +11,7 @@ function buscar() {
   }
 }
 export async function abrir() {
-  try { return await chromium.launch(); }
-  catch { return await chromium.launch({ executablePath: buscar() }); }
+  const args = ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'];
+  try { return await chromium.launch({ args }); }
+  catch { return await chromium.launch({ executablePath: buscar(), args }); }
 }

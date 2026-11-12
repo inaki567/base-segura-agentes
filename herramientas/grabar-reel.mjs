@@ -16,7 +16,7 @@ await page.waitForTimeout(800);
 await page.evaluate(() => document.getAnimations().forEach(a => a.pause()));
 for (let i = 0; i < total; i++) {
   const t = (i * 1000) / fps;
-  await page.evaluate(t => document.getAnimations().forEach(a => { a.currentTime = t; }), t);
+  await page.evaluate(t => { document.getAnimations().forEach(a => { a.currentTime = t; }); if (window.renderAt) window.renderAt(t / 1000); }, t);
   await page.screenshot({ path: path.join(dir, `f${String(i).padStart(5, '0')}.png`) });
 }
 await browser.close();
