@@ -1,0 +1,109 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Manejo manual de carga: ¿cuánto peso puede cargar un trabajador? (Código del Trabajo, arts. 211-G a 211-J)",
+ "escenas": [
+  {
+   "voz": "¿Tu trabajador carga sacos de cincuenta kilos al hombro? Eso es el doble de lo que permite la ley.",
+   "texto": "¿SACOS DE 50 KILOS AL HOMBRO?",
+   "resalta": [
+    "50 KILOS",
+    "cincuenta",
+    "kilos",
+    "doble"
+   ],
+   "sfx": "alarma",
+   "pastilla": {
+    "texto": "50 kg al hombro",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Imagina esto: llega el camión a la ferretería y Pedro baja los sacos al hombro.",
+   "resalta": [
+    "camión",
+    "Pedro"
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "voz": "Al levantar uno, siente un tirón en la espalda. Si se lesiona, es un accidente del trabajo.",
+   "resalta": [
+    "tirón",
+    "accidente"
+   ],
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "Lesión = accidente del trabajo",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "¿Cómo se evita? Uno: usa un carro o una transpaleta.",
+   "resalta": [
+    "carro",
+    "transpaleta."
+   ],
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "1 · Carro o transpaleta",
+    "tipo": "paso"
+   }
+  },
+  {
+   "voz": "Dos: si hay que cargar a mano, máximo veinticinco kilos.",
+   "resalta": [
+    "veinticinco",
+    "kilos."
+   ],
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · Máximo 25 kg",
+    "tipo": "paso"
+   }
+  },
+  {
+   "voz": "Tres: reparte el peso entre dos y levanta con la espalda recta.",
+   "resalta": [
+    "entre",
+    "dos",
+    "recta."
+   ],
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "3 · Entre dos y espalda recta",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "Lo dice el Código del Trabajo, artículo doscientos once H.",
+   "resalta": [
+    "Código",
+    "Trabajo,"
+   ],
+   "sfx": "ding",
+   "tarjeta": {
+    "encabezado": "CÓDIGO DEL TRABAJO · CHILE",
+    "articulo": "Art. 211-H",
+    "extracto": "\"Si la manipulación manual es inevitable y las ayudas mecánicas no pueden usarse, no se permitirá que se opere con cargas superiores a 25 kilogramos.\"",
+    "resaltado_amarillo": "no se permitirá que se opere con cargas superiores a 25 kilogramos",
+    "pastilla_chica": "Código del Trabajo · Chile · art. 211-H (20 kg mujeres y menores de 18: art. 211-J)"
+   },
+   "norma": "Código del Trabajo, art. 211-H"
+  },
+  {
+   "voz": "Te armamos la matriz de riesgos y la capacitación. Cotiza en un minuto en base segura punto cl.",
+   "resalta": [
+    "matriz",
+    "capacitación.",
+    "basesegura"
+   ],
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu matriz de riesgos en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Código del Trabajo (Chile), arts. 211-G, 211-H, 211-I y 211-J · DS 63, arts. 7 y 13 · DT, Ord. N° 1060 (22-03-2019) y Ord. N° 1300 (13-10-2023)"
+   }
+  }
+ ]
+}

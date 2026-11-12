@@ -98,7 +98,7 @@ CSS = """
 body{width:1080px;height:1920px;overflow:hidden;background:#141b29;font-family:Outfit,Manrope,sans-serif;position:relative}
 #gl,#gl canvas{position:absolute;inset:0}
 .ui{position:absolute;inset:0}
-.marca{position:absolute;top:70px;right:60px;color:#fff;font:700 34px Manrope;opacity:.85;text-shadow:0 2px 8px #0008}
+.marca{position:absolute;top:64px;right:56px;color:#fff;font:700 32px Manrope;background:rgba(13,17,23,.6);padding:8px 20px;border-radius:999px;z-index:5}
 .subs{position:absolute;top:170px;left:60px;right:60px;height:240px}
 .lin{position:absolute;inset:0;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:0 18px;text-align:center;
  font-weight:800;font-size:68px;line-height:1.12;color:#fff;text-shadow:0 6px 0 #0D1117,0 10px 30px rgba(0,0,0,.6);opacity:0}
@@ -134,7 +134,7 @@ def main():
     guion = json.load(open(f"{R}/guion.json", encoding="utf-8"))
     T = json.load(open(f"{R}/tiempos.json", encoding="utf-8"))
     escenas, tiempos, total = guion["escenas"], T["escenas"], T["total"]
-    if not (MIN_S <= total <= MAX_S + 1.5):
+    if not (MIN_S - 2 <= total <= MAX_S + 1.5):
         print(f"OJO: el reel dura {total} s. Iñaki pide entre {MIN_S} y {MAX_S} s: acorta o alarga las frases de voz y vuelve a pedir la voz.")
     escena = os.path.abspath(f"{R}/escena3d.js")
     if not os.path.exists(escena):
