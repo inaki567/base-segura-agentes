@@ -54,6 +54,7 @@ Incluye en `contenido.json` SOLO las claves de las piezas que existen ese día (
 ## Generación diaria
 1. Preparación. Carpeta = fecha de hoy en Chile (`TZ=America/Santiago date +%F`). Si `entregas/<fecha>` ya existe, termina sin hacer nada. Si hoy es sábado o domingo, termina sin hacer nada.
    Mira el día de la semana (`TZ=America/Santiago date +%u`) y crea SOLO las piezas del "Calendario semanal" de `CLAUDE.md`: lunes, miércoles y viernes = reel + LinkedIn (lunes y viernes perfil personal, miércoles página de empresa; el viernes además `linkedin-domingo` para la página de empresa); martes y jueves = carrusel solo.
+   **Pedidos de Iñaki:** si existe `pedidos/<fecha>.md`, léelo y obedécelo antes que todo (manda sobre el calendario y la elección de temas). Si existe `pedidos/<fecha>/<pieza>/`, esa pieza ya está hecha: cópiala tal cual a `entregas/<fecha>/<pieza>/` y no la vuelvas a generar.
 2. Arma la lista de temas ya usados y pásasela al investigador.
 3. Sigue `CLAUDE.md` con los cinco roles de `.claude/agents/` (investigador → redactor → disenador → editor-reel → revisor), trabajando dentro de `entregas/<fecha>/` en vez de `por-aprobar/`. Usa los subagentes si están disponibles; si no, cumple tú cada rol leyendo su archivo.
 4. Comprueba que existan los archivos de las piezas del día (PNG y `vista-previa.jpg` si hay carrusel; `reel.mp4` de menos de 20 MB si hay reel; `linkedin.md` e `imagen.png` si hay LinkedIn) y mira tú mismo las imágenes con la herramienta Read.

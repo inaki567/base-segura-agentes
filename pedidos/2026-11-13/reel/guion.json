@@ -1,0 +1,104 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Acto inseguro vs condición insegura",
+ "escenas": [
+  {
+   "voz": "¿Los accidentes los causa una persona o el lugar que ya estaba mal?",
+   "texto": "¿LA PERSONA O EL LUGAR?",
+   "resalta": [
+    "PERSONA",
+    "LUGAR?",
+    "persona",
+    "lugar"
+   ],
+   "sfx": "alarma"
+  },
+  {
+   "voz": "Acto inseguro: lo comete una persona. Por ejemplo, trabajar sin casco o trepar por una estantería.",
+   "resalta": [
+    "Acto",
+    "inseguro:",
+    "persona."
+   ],
+   "sfx": "whoosh",
+   "pastilla": {
+    "texto": "Acto inseguro = lo hace una persona",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Condición insegura: ya estaba en el lugar. Una caja mal apilada o un pasillo bloqueado.",
+   "resalta": [
+    "Condición",
+    "insegura:",
+    "lugar."
+   ],
+   "sfx": "golpe",
+   "pastilla": {
+    "texto": "Condición insegura = ya estaba en el lugar",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Cuando se juntan las dos, el accidente está a un paso.",
+   "resalta": [
+    "accidente"
+   ],
+   "sfx": "golpe"
+  },
+  {
+   "voz": "Contra los actos inseguros: capacita y exige el uso de elementos de protección.",
+   "resalta": [
+    "capacita",
+    "protección."
+   ],
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "1 · Capacitación y EPP",
+    "tipo": "paso"
+   }
+  },
+  {
+   "voz": "Contra las condiciones inseguras: inspecciona y corrige a tiempo.",
+   "resalta": [
+    "inspecciona",
+    "corrige"
+   ],
+   "sfx": "pop",
+   "pastilla": {
+    "texto": "2 · Inspecciona y corrige",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "La Ley dieciséis mil setecientos cuarenta y cuatro, artículo sesenta y ocho, obliga a la empresa a tomar estas medidas.",
+   "resalta": [
+    "Ley",
+    "obliga"
+   ],
+   "sfx": "ding",
+   "tarjeta": {
+    "encabezado": "LEY 16.744 · CHILE",
+    "articulo": "Art. 68",
+    "extracto": "\"Las empresas o entidades deberán implantar todas las medidas de higiene y seguridad en el trabajo...\"",
+    "resaltado_amarillo": "todas las medidas de higiene y seguridad",
+    "pastilla_chica": "También deben entregar los EPP sin costo para el trabajador"
+   }
+  },
+  {
+   "voz": "¿Qué acto inseguro ves más en tu planta? Cuéntanos en los comentarios y pide tu diagnóstico gratis en base segura punto cl.",
+   "resalta": [
+    "comentarios",
+    "diagnóstico",
+    "gratis"
+   ],
+   "sfx": "whoosh",
+   "cta": true,
+   "cierre": {
+    "franja": "Diagnóstico gratis en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Ley 16.744, art. 68 (bcn.cl). Conceptos de acto y condición insegura: prevención de riesgos."
+   }
+  }
+ ]
+}
