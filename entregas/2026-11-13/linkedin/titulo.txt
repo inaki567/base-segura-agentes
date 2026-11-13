@@ -1,0 +1,4 @@
+PASTILLA: NUEVO
+TITULO_PARTE1: 8 horas de
+TITULO_PARTE2: capacitación obligatoria
+APOYO: Desde el 1 de noviembre: certificado por trabajador, renovable cada dos años.

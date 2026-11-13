@@ -1,0 +1,4 @@
+PASTILLA: DICTAMEN
+TITULO_PARTE1: Fatiga al volante:
+TITULO_PARTE2: riesgo laboral
+APOYO: La Dirección del Trabajo lo confirmó: debe estar en tu matriz de riesgos.
