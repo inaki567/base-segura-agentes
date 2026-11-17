@@ -37,7 +37,7 @@ Para poder hacer push, la sesión debe tener el repo agregado con permiso de esc
 ```json
 {
   "carpeta": "2026-11-06",
-  "post": { "imagenes": ["post/01.png", "post/02.png"], "vista_previa": "post/vista-previa.jpg", "caption": "..." },
+  "post": { "imagenes": ["post/01.jpg", "post/02.jpg"], "vista_previa": "post/vista-previa.jpg", "caption": "..." },
   "reel": { "video": "reel/reel.mp4", "caption": "..." },
   "linkedin": { "texto": "...", "imagen": "linkedin/imagen.png", "cuenta": "personal | empresa" },
   "linkedin_domingo": { "texto": "...", "imagen": "linkedin-domingo/imagen.png", "cuenta": "empresa" },
@@ -50,6 +50,9 @@ Incluye en `contenido.json` SOLO las claves de las piezas que existen ese día (
 ## Temas ya usados (para no repetir)
 - `publicado/temas.md` del repo.
 - Gmail de basesegura.cl@gmail.com: correos con asunto `[CONTENIDO] Publicado` (aprobados) y `[CONTENIDO] Para aprobar` de los últimos 30 días (propuestos).
+
+## Carrusel: imágenes en JPG
+Instagram (vía Make) NO acepta PNG en carruseles. Además de `01.png`…, guarda cada lámina como JPG (`python3 -c "from PIL import Image; Image.open('post/01.png').convert('RGB').save('post/01.jpg', quality=92)"`) y en `contenido.json` pon en `post.imagenes` los `.jpg`.
 
 ## Generación diaria
 1. Preparación. Carpeta = fecha de hoy en Chile (`TZ=America/Santiago date +%F`). Si `entregas/<fecha>` ya existe, termina sin hacer nada. Si hoy es sábado o domingo, termina sin hacer nada.
