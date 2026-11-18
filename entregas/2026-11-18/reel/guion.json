@@ -1,0 +1,141 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Local comercial: un cliente le grita y amenaza a la vendedora en el mostrador. Es violencia en el trabajo ejercida por terceros (Ley Karin). 3 pasos (tomar distancia y pedir apoyo, registrar y avisar, tener el protocolo Ley Karin al día) y lo que dice el Código del Trabajo, art. 2 letra c) (violencia de clientes, proveedores o usuarios), con arts. 211-A y 211-B bis",
+ "escenas": [
+  {
+   "voz": "¿Qué pasaría si un cliente le grita y amenaza a tu vendedora?",
+   "texto": "¿UN CLIENTE LE GRITA A TU VENDEDORA?",
+   "resalta": [
+    "GRITA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "error",
+   "escenario": "local: ferretería con góndolas, mostrador y extintor. Acercamiento (plano cerca) al trabajador inseguro (polera roja, pantalón negro, sin EPP) detrás del mostrador, con cara de preocupación; frente al mostrador, el cliente (morado) le apunta con el dedo. Sin contacto físico",
+   "pastilla": {
+    "texto": "CLIENTE AGRESIVO",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Para la ley, es violencia en el trabajo. Si tu empresa no definió qué hacer, quien atiende queda solo.",
+   "texto": "SIN PROTOCOLO, QUEDA SOLO",
+   "resalta": [
+    "SOLO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "temblor",
+   "sfx": "error",
+   "escenario": "local en plano general: el cliente golpea el mostrador con la mano (tambaleo suave de cámara) y sigue apuntando; el trabajador inseguro sale de detrás del mostrador para encararlo y queda solo frente a él, termina con las manos en la cabeza. Nadie llega a ayudar. El inseguro no es el culpable: ilustra una empresa que no definió qué hacer",
+   "pastilla": {
+    "texto": "VIOLENCIA DE UN CLIENTE",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Uno: toma distancia, no discutas y pide apoyo. Ante amenazas graves, llama a Carabineros.",
+   "texto": "1 · DISTANCIA Y APOYO",
+   "resalta": [
+    "APOYO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "escenario": "local, cambio de plano, versión CON protocolo: el trabajador seguro (chaleco reflectante azul y casco blanco) se queda detrás del mostrador y retrocede un paso para tomar distancia, sin discutir; llega el jefe caminando y se pone entre el cliente y el trabajador; el cliente se retira hacia la puerta",
+   "pastilla": {
+    "texto": "1 · TOMA DISTANCIA Y PIDE APOYO",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "3 COSAS · DE INMEDIATO",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Dos: registra qué pasó y avisa. Con la denuncia, tu empresa debe tomar resguardos de inmediato.",
+   "texto": "2 · REGISTRA Y AVISA",
+   "resalta": [
+    "REGISTRA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, art. 211-B bis",
+   "escenario": "local: el trabajador seguro completa en el mostrador un formulario 'REGISTRO DEL HECHO' (qué pasó, cuándo, quién estaba) mientras el jefe lo acompaña; el cliente ya salió del local",
+   "pastilla": {
+    "texto": "2 · REGISTRA Y AVISA",
+    "tipo": "paso"
+   }
+  },
+  {
+   "voz": "Tres: ten tu protocolo Ley Karin al día. Es obligatorio aunque tengas menos de diez trabajadores.",
+   "texto": "3 · PROTOCOLO AL DÍA",
+   "resalta": [
+    "PROTOCOLO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, art. 211-A; Dictamen DT 362/19",
+   "escenario": "local: el jefe apunta a un cartel 'PROTOCOLO LEY KARIN' en la pared, con el ícono de atención de público; el trabajador seguro sonríe (feliz) y aparece una marca verde de ok en el suelo",
+   "pastilla": {
+    "texto": "3 · TEN TU PROTOCOLO AL DÍA",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "TAMBIÉN CON MENOS DE 10",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "Lo dice el Código del Trabajo, artículo dos, letra c: incluye la violencia de clientes, proveedores o usuarios.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Código del Trabajo, art. 2 letra c)",
+   "escenario": "local en plano alto y órbita lenta, ferretería tranquila con el trabajador seguro detrás del mostrador; la tarjeta blanca de la ley sube desde abajo",
+   "tarjeta": {
+    "encabezado": "CÓDIGO DEL TRABAJO · CHILE",
+    "articulo": "Art. 2, letra c)",
+    "extracto": "\"La violencia en el trabajo ejercida por terceros (...) por parte de clientes, proveedores o usuarios, entre otros.\"",
+    "resaltado_amarillo": "clientes, proveedores o usuarios",
+    "pastilla_chica": "Código del Trabajo · Chile · art. 2 letra c)"
+   }
+  },
+  {
+   "voz": "¿Tu equipo atiende público? Te hacemos el protocolo desde cuarenta y siete mil más IVA. Entra a basesegura punto cl y cotiza en un minuto.",
+   "texto": "¿TU EQUIPO ATIENDE PÚBLICO?",
+   "resalta": [
+    "PÚBLICO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "escenario": "fondo oscuro con el local en órbita al fondo, logo de Base Segura al centro",
+   "cta": true,
+   "cierre": {
+    "franja": "Cotiza tu protocolo Ley Karin en basesegura.cl",
+    "debajo": "Desde $47.000 + IVA (valor referencial) · contacto@basesegura.cl",
+    "fuente": "Fuente: Código del Trabajo (Chile), art. 2 letra c) y arts. 211-A y 211-B bis, Ley 21.643 · consultado el 18-11-2026"
+   }
+  }
+ ]
+}
