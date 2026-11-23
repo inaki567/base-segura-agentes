@@ -1,0 +1,145 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Corte con cuchillo cartonero en la bodega: qué hacer de inmediato (primeros auxilios básicos, derivar a la mutual o al ISL, DIAT en 24 horas y corregir la causa) y lo que exige el Código del Trabajo, art. 184, inc. 2° (garantizar una oportuna y adecuada atención médica)",
+ "escenas": [
+  {
+   "voz": "Se cortó la mano en la bodega. ¿Sabes a dónde llevarlo?",
+   "texto": "SE CORTÓ LA MANO: ¿A DÓNDE LO LLEVAS?",
+   "resalta": [
+    "DÓNDE"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "error",
+   "escenario": "bodega: estanterías altas con cajas y una mesa donde se abren cajas. Acercamiento al trabajador inseguro (polera roja, pantalón negro, sin guantes ni casco) que se mira la mano con cara de susto; destello rojo breve, sin sangre explícita, y temblor de cámara",
+   "pastilla": {
+    "texto": "⚠️ CORTE CON HERRAMIENTA",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Abrir cajas con un cartonero parece simple. Hasta que la hoja se resbala.",
+   "texto": "PARECE SIMPLE… HASTA QUE SE RESBALA",
+   "resalta": [
+    "SE RESBALA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "escenario": "bodega en plano general (rebobinado de lo que pasó): el trabajador inseguro abre cajas apurado tirando la hoja del cartonero HACIA su cuerpo y con la otra mano en la línea de corte; la hoja se resbala (destello rojo, sin sangre). Luego sus compañeros buscan el botiquín y no lo encuentran; aparece una burbuja 'ANDA A TU CASA' tachada en rojo",
+   "pastilla": {
+    "texto": "❌ CORTE HACIA EL CUERPO",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Uno: detén la tarea y da primeros auxilios, con guantes y gasa.",
+   "texto": "1 · PARA Y DA PRIMEROS AUXILIOS",
+   "resalta": [
+    "PRIMEROS AUXILIOS"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "agachado",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "escenario": "bodega, cambio de plano: el trabajador seguro (chaleco reflectante azul, casco blanco y guantes) saca el botiquín de un muro con letrero verde señalizado, se pone guantes y atiende al compañero con una gasa, sin detalle clínico; temporizador en pantalla",
+   "pastilla": {
+    "texto": "1 · PRIMEROS AUXILIOS",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "✅ BOTIQUÍN A MANO",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "Dos: llévalo a tu mutual o al ISL, no a su casa.",
+   "texto": "2 · A TU MUTUAL O AL ISL",
+   "resalta": [
+    "MUTUAL",
+    "ISL"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "escenario": "bodega: el trabajador seguro acompaña al compañero hacia la salida; aparece la pantalla de un teléfono 'Llamando… Mutual / ISL'. Una casita con una X roja indica que no se le manda a su casa",
+   "pastilla": {
+    "texto": "2 · LLÉVALO A TU MUTUAL O AL ISL",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "🚑 SI ES GRAVE: PUEDE IR A OTRO CENTRO DE SALUD",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Tres: haz la denuncia en veinticuatro horas y corrige la causa: hoja retráctil, guantes anticorte y riesgo en la matriz.",
+   "texto": "3 · DENUNCIA Y CORRIGE",
+   "resalta": [
+    "CORRIGE"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "DS 44, arts. 7 y 15",
+   "escenario": "bodega: aparece el formulario 'DENUNCIA DE ACCIDENTE (DIAT)' con un reloj '24 h' y se marca como enviado. Después, el trabajador seguro corta una caja alejando la hoja del cuerpo, con un cartonero de hoja retráctil, guantes anticorte y la mano libre fuera de la línea de corte; junto a él flota una hoja 'MATRIZ DE RIESGOS' con el tick 'Riesgo de corte'",
+   "pastilla": {
+    "texto": "3 · DIAT EN 24 H Y CORREGIR",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "✅ CORTE HACIA AFUERA",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "Lo exige el Código del Trabajo, artículo ciento ochenta y cuatro: garantizar el acceso a una oportuna y adecuada atención médica.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Código del Trabajo, art. 184",
+   "escenario": "bodega ordenada en órbita lenta, con el botiquín señalizado en el muro; la tarjeta blanca de la ley sube desde abajo",
+   "tarjeta": {
+    "encabezado": "CÓDIGO DEL TRABAJO · CHILE",
+    "articulo": "Art. 184",
+    "extracto": "\"(...) para que los trabajadores en caso de accidente o emergencia puedan acceder a una oportuna y adecuada atención médica (...)\"",
+    "resaltado_amarillo": "oportuna y adecuada atención médica",
+    "pastilla_chica": "Código del Trabajo · Chile · art. 184"
+   }
+  },
+  {
+   "voz": "¿Tu equipo sabe qué hacer si alguien se corta? Te armamos el plan de emergencia y la matriz. Entra a basesegura punto cl y cotiza en un minuto.",
+   "texto": "¿TU EQUIPO SABE QUÉ HACER?",
+   "resalta": [
+    "QUÉ HACER"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "escenario": "fondo oscuro con la bodega en órbita al fondo, logo de Base Segura al centro",
+   "cta": true,
+   "cierre": {
+    "franja": "Primeros auxilios, mutual y DIAT. Cotiza tu plan en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Código del Trabajo (Chile), art. 184 · Suseso · consultado el 23-11-2026"
+   }
+  }
+ ]
+}
