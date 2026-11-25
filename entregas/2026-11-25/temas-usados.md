@@ -1,0 +1,32 @@
+# Temas ya usados (repo + Gmail, últimos 30 días) — NO repetir
+## Reels
+- Terremoto en el trabajo (05-11)
+- Accidente de trayecto: caída bajando de la micro (Ley 16.744 art. 5) (06-11)
+- Golpe de calor, art. 98 bis DS 594 (DS 40/2025) (07-11)
+- Sacos de 50 kg: carga manual (CT 211-H, 211-J, DS 63) (09-11)
+- Caída desde más de 1,80 m = accidente grave, suspender faena (10-11)
+- Trabajador N° 10: Delegado de SST (DS 44 art. 66) (11-11)
+- Acto inseguro vs condición insegura (13-11)
+- Grúa horquilla y peatones en la bodega (16-11)
+- Cliente grita y amenaza a la vendedora: violencia de terceros, Ley Karin (18-11)
+## Carruseles
+- Llegó el fiscalizador: 6 documentos DS 44; Resolución sanitaria SEREMI; IRL la falla más multada; Se accidentó un trabajador ¿y ahora? (03-11)
+- 3 documentos desde el día 1 (05-11); Amago de incendio en cocina, extintores DS 594 (06-11)
+- Trabajador puede parar la obra: riesgo grave e inminente CT 184 bis (07-11)
+- EPP los paga la empresa (09-11); Empresa de aseo, resbalón en local del cliente (10-11)
+- Mito reglamento interno con menos de 10 trabajadores (12-11)
+- Sustitución de multas DT, art. 506 ter (17-11); Ruido 85 dB(A) DS 594 (19-11)
+## LinkedIn
+- 3 de cada 4 enfermedades profesionales son de salud mental (03-11); Revisión anual de la matriz (05-11)
+- Guía técnica de capacitación Res. Ex. 1.117/2026 (06-11); Ley Karin a dos años, 4° informe DT (07-11)
+- Plan Anual de Prevención 2027 Suseso en consulta (09-11); Incendios forestales, oficio Suseso, La Araucanía (10-11)
+- Circular Suseso 3938 incidentes peligrosos/casi accidente (11-11)
+- Capacitación DS 44 art. 16: 8 horas, certificado 2 años, Circular 3932 (13-11, personal)
+- Fatiga y somnolencia al volante, Dictamen DT 388/32 (13-11, empresa)
+- Convenio 155 OIT rige en Chile (16-11, personal)
+- Circular Suseso 3940: accidente grave, matriz, árbol de causas (18-11, empresa)
+- Reel 23-11: Se cortó la mano en la bodega: ¿a dónde lo llevas? (primeros auxilios, mutual/ISL, DIAT 24 h, CT art. 184) — pilar 1
+- LinkedIn 23-11 (personal): Circular Suseso 3916, protocolo de patología lumbar, rige 01-12-2026
+- Carrusel 24-11: Diciembre en tu tienda: ¿las cajas tapan la salida? (DS 594 art. 7, DS 44 arts. 15 y 19)
+- Reel 25-11: Trabajador se niega a usar casco: ¿lo puedes multar? (Ley 16.744 art. 67, CT 154 N°10 y 157)
+- LinkedIn 25-11 (empresa): La Araucanía 2,6 vs país 2,4 accidentes por 100 relaciones laborales, Suseso 2025

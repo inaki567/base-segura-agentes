@@ -1,0 +1,146 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Trabajador que se niega a usar casco y arnés en la obra: qué hacer (detener la tarea y explicar el riesgo, amonestación solo si está en el reglamento interno, multa de hasta el 25 % de la remuneración diaria) y lo que exige la Ley 16.744, art. 67 (el reglamento debe contemplar multas a quien no use el EPP entregado)",
+ "escenas": [
+  {
+   "voz": "¿Qué pasaría si tu trabajador se niega a usar el casco? ¿Lo puedes multar?",
+   "texto": "SIN CASCO: ¿SE PUEDE MULTAR?",
+   "resalta": [
+    "MULTAR"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "error",
+   "escenario": "obra: terreno con andamio, conos y valla. Acercamiento al trabajador inseguro (polera roja, pantalón negro, sin casco ni arnés) parado junto al andamio con los brazos cruzados; a su lado, en el suelo, un casco y un arnés sin usar; destello rojo breve",
+   "pastilla": {
+    "texto": "⚠️ SIN CASCO NI ARNÉS",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Está en el andamio sin casco ni arnés y no se los quiere poner.",
+   "texto": "EN ALTURA Y SIN PROTECCIÓN",
+   "resalta": [
+    "SIN PROTECCIÓN"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "golpe",
+   "escenario": "obra en plano general: el trabajador inseguro sube al segundo nivel del andamio sin arnés y sin casco, se tambalea y se sujeta de la baranda (temblor de cámara, sin caída). Abajo, el trabajador seguro (chaleco reflectante azul y casco blanco), que es el supervisor, le ofrece el casco y el arnés; aparece una burbuja 'NO LO NECESITO' tachada en rojo",
+   "pastilla": {
+    "texto": "❌ NO SE PONE SU EPP",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Uno: detén la tarea y explícale el riesgo. Primero está su vida.",
+   "texto": "1 · DETÉN LA TAREA",
+   "resalta": [
+    "DETÉN"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, art. 184",
+   "escenario": "obra, cambio de plano: el trabajador seguro levanta la mano y pide al compañero que baje del andamio; aparece cinta de peligro roja y blanca en el acceso al andamio y un candado. Ya abajo, conversan cara a cara y el trabajador seguro le muestra el casco y el arnés",
+   "pastilla": {
+    "texto": "1 · DETÉN LA TAREA",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "🦺 EL EPP LO PAGA LA EMPRESA",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Dos: puedes amonestarlo, verbalmente o por escrito, solo si tu reglamento interno lo contempla.",
+   "texto": "2 · AMONESTACIÓN, SI ESTÁ EN EL REGLAMENTO",
+   "resalta": [
+    "REGLAMENTO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, art. 154 N° 10",
+   "escenario": "obra: junto al trabajador seguro flota un documento 'REGLAMENTO INTERNO DE ORDEN, HIGIENE Y SEGURIDAD' que se abre en la página 'SANCIONES' con un tick verde; luego aparece una hoja 'AMONESTACIÓN ESCRITA' que se firma",
+   "pastilla": {
+    "texto": "2 · AMONESTACIÓN VERBAL O ESCRITA",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "📘 SOLO SI ESTÁ EN TU REGLAMENTO",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Tres: la multa también debe estar en el reglamento, con un máximo del veinticinco por ciento de su remuneración diaria.",
+   "texto": "3 · MULTA: MÁX. 25 % DE 1 DÍA",
+   "resalta": [
+    "25 %"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "Código del Trabajo, arts. 154 N° 10 y 157",
+   "escenario": "obra: aparece una moneda grande dividida en cuatro partes y se ilumina solo una (un cuarto = 25 %). Al fondo, el trabajador antes inseguro ya lleva casco blanco y arnés puesto y vuelve a subir al andamio enganchado a la línea de vida; el trabajador seguro le hace un gesto de aprobación",
+   "pastilla": {
+    "texto": "3 · MULTA: MÁX. 25 % DE 1 DÍA",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "⚖️ PUEDE RECLAMAR ANTE LA INSPECCIÓN DEL TRABAJO",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Lo dice la Ley dieciséis mil setecientos cuarenta y cuatro, artículo sesenta y siete: el reglamento debe contemplar multas a quien no use su protección.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "Ley 16.744, art. 67",
+   "escenario": "obra ordenada en órbita lenta, con el andamio y el trabajador con casco y arnés; la tarjeta blanca de la ley sube desde abajo",
+   "tarjeta": {
+    "encabezado": "LEY 16.744 · CHILE",
+    "articulo": "Art. 67",
+    "extracto": "\"Los reglamentos deberán consultar la aplicación de multas a los trabajadores que no utilicen los elementos de protección personal que se les haya proporcionado…\"",
+    "resaltado_amarillo": "aplicación de multas",
+    "pastilla_chica": "Ley 16.744 · Chile · art. 67"
+   }
+  },
+  {
+   "voz": "¿Tu reglamento lo tiene? Te lo hacemos desde sesenta y dos mil más IVA, valor referencial. Cotiza en basesegura punto cl.",
+   "texto": "¿TU REGLAMENTO LO TIENE?",
+   "resalta": [
+    "REGLAMENTO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "escenario": "fondo oscuro con la obra en órbita al fondo, logo de Base Segura al centro",
+   "cta": true,
+   "cierre": {
+    "franja": "Reglamento interno desde $62.000 + IVA (referencial, 1 a 9 trabajadores). Diagnóstico gratis en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: Ley 16.744 (Chile), art. 67 · Código del Trabajo, arts. 154 y 157 · Suseso y DT · consultado el 25-11-2026"
+   }
+  }
+ ]
+}
