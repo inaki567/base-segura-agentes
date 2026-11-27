@@ -1,0 +1,144 @@
+{
+ "voz": "gemini:Finn",
+ "tema": "Restaurante al cierre: una trabajadora mezcla cloro con otro producto de limpieza y sale un vapor tóxico. Qué hacer (sacar a todos al aire libre y ventilar, ir de inmediato a la mutual o al ISL si hay síntomas, nunca mezclar productos y guardarlos en su envase original) y lo que exige el DS 44, art. 15 N° 4 (informar a cada trabajador, antes de empezar, las características, el modo de empleo, el almacenamiento y la protección de los productos que usará)",
+ "escenas": [
+  {
+   "voz": "¿Qué pasaría si en tu local mezclan cloro con otro producto? ¿Qué hacer ahora?",
+   "texto": "¿CLORO + OTRO PRODUCTO? ¿QUÉ HACER?",
+   "resalta": [
+    "CLORO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "alerta",
+   "efecto": "zoom",
+   "sfx": "error",
+   "escenario": "local: restaurante pequeño a la hora del cierre, sillas sobre las mesas y luces bajas. Acercamiento a la trabajadora insegura (polera roja, pantalón negro, sin guantes ni mascarilla ni EPP) en la cocina, vaciando una botella de cloro dentro de un balde donde ya hay otro producto de limpieza; cara de preocupación",
+   "pastilla": {
+    "texto": "⚠️ MEZCLA PELIGROSA",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Al cierre, sale vapor del balde: la trabajadora tose y le arden los ojos.",
+   "texto": "VAPOR TÓXICO EN LA COCINA",
+   "resalta": [
+    "TÓXICO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "cae",
+   "efecto": "temblor",
+   "sfx": "alarma",
+   "escenario": "local en plano general: del balde sube una nube verdosa estilizada; la trabajadora insegura se tambalea, tose y se tapa la cara con el brazo, con lágrimas en los ojos (temblor de cámara suave, sin caída). Por la puerta del comedor entra el dueño, el trabajador seguro (chaleco reflectante azul y casco blanco), con cara de alarma",
+   "pastilla": {
+    "texto": "☣️ GASES TÓXICOS",
+    "tipo": "peligro"
+   }
+  },
+  {
+   "voz": "Uno: saca a todos al aire libre y ventila, sin respirar sobre el balde.",
+   "texto": "1 · AL AIRE LIBRE Y VENTILAR",
+   "resalta": [
+    "AIRE LIBRE"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "escenario": "local, cambio de plano: el trabajador seguro señala la salida y acompaña a la trabajadora hacia la puerta trasera; las puertas y ventanas se abren solas y la nube verdosa empieza a salir y a disiparse. Afuera, ambos respiran aire fresco; cinta de peligro roja y blanca en la puerta de la cocina",
+   "pastilla": {
+    "texto": "1 · TODOS AL AIRE LIBRE",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "🪟 ABRE PUERTAS Y VENTANAS",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Dos: si hay tos, ardor de ojos o dolor de cabeza, llévala de inmediato a la mutual o al ISL.",
+   "texto": "2 · DE INMEDIATO AL MÉDICO",
+   "resalta": [
+    "DE INMEDIATO"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "habla",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "escenario": "exterior del local: la trabajadora sentada, tosiendo menos; el trabajador seguro le habla con calma y en su teléfono aparece la pantalla 'Llamando… Mutual / ISL'. Aparece un reloj que marca la urgencia",
+   "pastilla": {
+    "texto": "2 · A LA MUTUAL O AL ISL",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "🩺 ES UN ACCIDENTE DEL TRABAJO",
+    "tipo": "info"
+   }
+  },
+  {
+   "voz": "Tres: nunca mezcles productos. Cada uno en su envase original, con etiqueta y bien guardado.",
+   "texto": "3 · NUNCA MEZCLAR",
+   "resalta": [
+    "NUNCA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "trabajador",
+   "pose": "ok",
+   "efecto": "zoom",
+   "sfx": "pop",
+   "norma": "DS 594, art. 42",
+   "escenario": "local, cocina ya ventilada: el trabajador seguro ordena las botellas en un estante cerrado, cada una en su envase original con etiqueta visible; una botella sin etiqueta se tacha en rojo y desaparece. La trabajadora, ahora con guantes, observa y asiente",
+   "pastilla": {
+    "texto": "3 · NUNCA MEZCLES PRODUCTOS",
+    "tipo": "paso"
+   },
+   "pastilla_2": {
+    "texto": "🏷️ ENVASE ORIGINAL Y CON ETIQUETA",
+    "tipo": "ok"
+   }
+  },
+  {
+   "voz": "El Decreto Supremo cuarenta y cuatro, artículo quince, exige informar a cada trabajador, antes de empezar, cómo usar y guardar cada producto.",
+   "texto": "LO DICE LA LEY",
+   "resalta": [
+    "LEY"
+   ],
+   "fondo": "oscuro",
+   "personaje": "ninguno",
+   "pose": "habla",
+   "efecto": "ninguno",
+   "sfx": "ding",
+   "norma": "DS 44, art. 15 N° 4",
+   "escenario": "restaurante ordenado y limpio en órbita lenta, con el estante de productos etiquetados y la trabajadora con guantes; la tarjeta blanca de la ley sube desde abajo",
+   "tarjeta": {
+    "encabezado": "DS 44 · CHILE",
+    "articulo": "Art. 15 N° 4",
+    "extracto": "La empresa debe informar \"Las características de los productos y sustancias que se manipularán… el modo de empleo… la forma de almacenamiento y uso de elementos de protección personal, las medidas sobre primeros auxilios…\"",
+    "resaltado_amarillo": "la forma de almacenamiento y uso de elementos de protección personal",
+    "pastilla_chica": "DS 44 · Chile · art. 15 N° 4"
+   }
+  },
+  {
+   "voz": "¿Tu equipo lo sabe? Información de riesgos desde veinte mil por puesto más IVA, referencial. Cotiza en basesegura punto cl.",
+   "texto": "¿TU EQUIPO SABE QUÉ NO SE MEZCLA?",
+   "resalta": [
+    "NO SE MEZCLA"
+   ],
+   "fondo": "oscuro",
+   "personaje": "mascota",
+   "pose": "senala",
+   "efecto": "zoom",
+   "sfx": "whoosh",
+   "escenario": "fondo oscuro con el restaurante en órbita al fondo, logo de Base Segura al centro",
+   "cta": true,
+   "cierre": {
+    "franja": "IRL desde $20.000 por puesto + IVA (referencial, 1 a 9 trabajadores). Diagnóstico gratis en basesegura.cl",
+    "debajo": "contacto@basesegura.cl",
+    "fuente": "Fuente: DS 44 (Chile), art. 15 N° 4 · DS 594, art. 42 · ISP, Nota Técnica N° 25 sobre desinfectantes · consultado el 27-11-2026"
+   }
+  }
+ ]
+}
